@@ -1,0 +1,78 @@
+---
+import 'photoswipe/style.css';
+import { Image } from "astro:assets";
+import gallery from "/src/images/gallery/gallery.jpg";
+import gallery1 from "/src/images/gallery/gallery1.jpg";
+import gallery2 from "/src/images/gallery/gallery2.jpg";
+import gallery3 from "/src/images/gallery/gallery3.jpg";
+import gallery4 from "/src/images/gallery/gallery4.jpg";
+import gallery5 from "/src/images/gallery/gallery5.jpg";
+import gallery6 from "/src/images/gallery/gallery6.jpg";
+import gallery7 from "/src/images/gallery/gallery7.jpg";
+import gallery8 from "/src/images/gallery/gallery8.jpg";
+---
+
+<div class="container mx-auto py-24" id="project">
+    <div class="section-title text-center mb-12">
+        <h6 class="text-4xl font-extrabold mb-3 text-orange-500 uppercase tracking-widest">Galería</h6>
+        <h1 class="text-xl text-orange-500 font-semibold">Algunos ejemplos de instalación</h1>
+    </div>
+    <div class="grid grid-cols-3 gap-4 pswp-gallery" id="gallery">
+        <div class="gallery-item">
+            <a href="/src/images/gallery/gallery.jpg" data-pswp-width="1024" data-pswp-height="768" target="_blank">
+                <Image src={gallery} alt="Imagen de galería 1" width={1024} height={768} class="w-full rounded-lg" />
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="/src/images/gallery/gallery1.jpg" data-pswp-width="4032" data-pswp-height="3024" target="_blank">
+                <Image src={gallery1} alt="Imagen de galería 2" width={4032} height={3024} class="w-full rounded-lg" />
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="/src/images/gallery/gallery2.jpg" data-pswp-width="4032" data-pswp-height="3024" target="_blank">
+                <Image src={gallery2} alt="Imagen de galería 3" width={4032} height={3024} class="w-full rounded-lg" />
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="/src/images/gallery/gallery3.jpg" data-pswp-width="4032" data-pswp-height="2725" target="_blank">
+                <Image src={gallery3} alt="Imagen de galería 4" width={4032} height={2725} class="w-full rounded-lg" />
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="/src/images/gallery/gallery4.jpg" data-pswp-width="4032" data-pswp-height="3024" target="_blank">
+                <Image src={gallery4} alt="Imagen de galería 5" width={4032} height={3024} class="w-full rounded-lg" />
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="/src/images/gallery/gallery5.jpg" data-pswp-width="4032" data-pswp-height="3024" target="_blank">
+                <Image src={gallery5} alt="Imagen de galería 6" width={4032} height={3024} class="w-full rounded-lg" />
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="/src/images/gallery/gallery6.jpg" data-pswp-width="4032" data-pswp-height="3024" target="_blank">
+                <Image src={gallery6} alt="Imagen de galería 7" width={4032} height={3024} class="w-full rounded-lg" />
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="/src/images/gallery/gallery7.jpg" data-pswp-width="4032" data-pswp-height="3024" target="_blank">
+                <Image src={gallery7} alt="Imagen de galería 8" width={4032} height={3024} class="w-full rounded-lg" />
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="/src/images/gallery/gallery8.jpg" data-pswp-width="4032" data-pswp-height="3024" target="_blank">
+                <Image src={gallery8} alt="Imagen de galería 9" width={4032} height={3024} class="w-full rounded-lg" />
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+import PhotoSwipeLightbox from "photoswipe/lightbox";
+const lightbox = new PhotoSwipeLightbox({
+    gallery: "#gallery",
+    children: "a",
+    pswpModule: () => import("photoswipe"),
+});
+lightbox.init();
+</script>
+

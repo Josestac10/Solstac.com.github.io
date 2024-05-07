@@ -1,0 +1,104 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+import 'flowbite';
+import Nanv from '../components/Nanv.astro';
+import Wsp from '../components/Wsp.astro';
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Solstac Termas Solares" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/ico" href="/LogoSolstacIco.ico" />
+    <title>{title}</title>
+  </head>
+
+  <body>    
+    <div class="navbar">
+      <Nanv />
+      <slot />
+      <Wsp />
+
+    </div>
+      
+  </body>
+  
+</html>
+
+<style is:global>
+  :root {
+    --primary-color: #ffffff; /* Blanco como color principal */
+    --secondary-color: #ff7f50; /* Naranja Coral como color secundario */
+    --accent-dark: #c75146; /* Un tono oscuro de naranja para contraste */
+    --text-color: #333333; /* Gris oscuro para textos para mayor legibilidad */
+    --background-color: var(--primary-color); /* Blanco de fondo */
+    --link-color: var(--secondary-color); /* Naranja para links */
+    --link-hover-color: #ff6347; /* Un tono más vivo de naranja para hover */
+  }
+  
+  /* Establece los estilos base para la página */
+  body {
+    font-family: system-ui, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Estilos para el código, si es necesario */
+  code {
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+    background-color: #eee; /* Fondo claro para bloques de código */
+    padding: 0.25rem;
+    border-radius: 4px;
+  }
+
+  /* Estilos para enlaces */
+  a {
+    color: var(--link-color);
+    text-decoration: none; /* Elimina subrayado de los enlaces */
+  }
+
+  a:hover {
+    color: var(--link-hover-color);
+    text-decoration: no-underline; /* Añade subrayado al hacer hover */
+  }
+
+  .thumbnail:hover {
+    opacity: 0.8;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  position: fixed;
+  width: 100%;
+  z-index: 1040;
+  top: 0; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  padding-top: 51px;
+}
+
+.CarouselWrapper {
+  margin-top: 1rem;
+}
+
+
+  /* Añade aquí más estilos personalizados según sea necesario */
+</style>

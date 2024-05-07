@@ -1,0 +1,167 @@
+---
+// Importa Flowbite y Tailwind CSS SI ES MIO EL PROYECTO
+import 'flowbite';
+
+import { Image } from 'astro:assets';
+import prod1 from '../images/prod/prod1.jpg';
+import prod2 from '../images/prod/prod2.jpg';
+import prod3 from '../images/prod/prod3.jpg';
+import prod4 from '../images/prod/prod4.jpg';
+import prod5 from '../images/prod/prod5.jpg';
+import prod6 from '../images/prod/prod6.jpg';
+import prod7 from '../images/prod/prod7.jpg';
+
+---
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos Solstac</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@latest/dist/flowbite.min.js"></script>
+    <style>
+        body { background-color: #ffffff; }
+        .header-bg { background-color: #f97316; } /* Naranja para la cabecera */
+        .footer-bg { background-color: #f3f4f6; } /* Gris claro para el pie de página */
+        .btn-primary { background-color: #f97316; color: white; }
+        .btn-primary:hover { background-color: #ea580c; } /* Un tono más oscuro de naranja */
+    </style>
+</head>
+<body >
+
+    <section class="bg-cover bg-center bg-no-repeat bg-[url('/src/images/EnergSol/energSol-1.jpg')] bg-gray-500 bg-blend-multiply w-full min-h-screen">
+        <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+          <h1 class="mb-4 text-5xl font-extrabold tracking-tight leading-none text-white md:text-6xl lg:text-7xl">Explora Nuestros Productos Destacados</h1>
+          <p class="mb-8 text-xl font-normal text-gray-100 lg:text-2xl sm:px-16 lg:px-48">Transformando el futuro con soluciones solares sostenibles y eficientes.</p>
+          <div
+          class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0"
+        >
+          <a
+            href="#produc" 
+            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-orange-500 hover:bg-orange-600 hover:text-white hover:scale-110 ease-in-out duration-300 border border-orange-500 "
+          >
+            Mira nuestros productos
+            <svg
+              class="w-3.5 h-3.5 ms-2 rotate-90"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+            </svg>
+          </a>
+          <a
+            href="/Contactanos"
+            class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 hover:scale-110 ease-in-out duration-300"
+          >
+            Más información
+          </a>
+        </div>
+        </div>
+    </section>
+    
+
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 my-8 flex flex-col md:flex-row mt-20">
+    <!-- Sidebar for Filters -->
+    <div class="flex flex-col w-full md:w-1/4 lg:w-1/5 mb-4 md:mb-0 md:mr-4">
+        <h2 class="text-2xl font-bold text-orange-500 dark:text-white mb-6">Categorías:</h2>
+        <button class="filter-btn btn-primary py-2 px-3 rounded mb-2 hover:-translate-y-1 duration-300" data-filter="all">Todos</button>
+        <button class="filter-btn btn-primary py-2 px-3 rounded mb-2 hover:-translate-y-1 ease-in-out duration-300" data-filter="termas-solstac">Termas</button>
+        <button class="filter-btn btn-primary py-2 px-3 rounded mb-2 hover:-translate-y-1 ease-in-out duration-300" data-filter="colectores">Colectores</button>
+        <button class="filter-btn btn-primary py-2 px-3 rounded mb-2 hover:-translate-y-1 ease-in-out duration-300" data-filter="tanques">Tanques</button>
+        <button class="filter-btn btn-primary py-2 px-3 rounded mb-2 hover:-translate-y-1 ease-in-out duration-300" data-filter="accesorios">Accesorios</button>
+    </div>
+
+    <!-- Main Content Area for Products -->
+  <!-- Main Content Area for Products -->
+  <div class="w-4/5 " id="produc">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 bg-white shadow rounded" id="product-grid">
+
+        <!-- Productos para Termas Solstac -->
+        <div class="product-card" data-category="termas-solstac">
+            <Image src={prod1} alt="Terma Solstac Baja Presión" class="rounded-lg shadow"  loading="eager" />
+            <h3 class="text-lg font-bold text-gray-800">Terma Baja Presión</h3>
+            <p class="text-gray-600">Ideal para hogares con presión de agua baja.</p>
+            <a href="/ProdTermas"><button class="btn-primary py-2 px-4 rounded mt-3 hover:bg-orange-700">Ver más</button></a>
+        </div>
+        <div class="product-card" data-category="termas-solstac">
+            <Image src={prod2} alt="Terma Solstac Heat Pipe Presurizado" class="rounded-lg shadow" loading="eager" />
+            <h3 class="text-lg font-bold text-gray-800">Terma Heat Pipe Presurizado</h3>
+            <p class="text-gray-600">Máxima eficiencia y rápida transferencia de calor.</p>
+            <a href="/ProdHeatPipe" class="inline-block">
+            <button class="btn-primary py-2 px-4 rounded mt-3 hover:bg-orange-700">Ver más</button>
+            </a>
+        </div>
+        
+        <div class="product-card" data-category="termas-solstac">
+            <Image src={prod3} alt="Terma Solstac con Serpentin Presurizado" class="rounded-lg shadow" loading="eager" />
+            <h3 class="text-lg font-bold text-gray-800">Terma con Presión Constante con Serpentin</h3>
+            <p class="text-gray-600">Excelente rendimiento en áreas con alta presión de agua.</p>
+            <a href="/ProdSerpentin" class="inline-block">
+                <button class="btn-primary py-2 px-4 rounded mt-3 hover:bg-orange-700">Ver más</button>
+            </a>
+        </div>
+        
+        <div class="product-card" data-category="termas-solstac">
+            <Image src={prod4} alt="Terma Solstac con Serpentin Presurizado" class="rounded-lg shadow" loading="eager" />
+            <h3 class="text-lg font-bold text-gray-800">Terma Split Presurizado</h3>
+            <p class="text-gray-600">Excelente rendimiento en áreas con alta presión de agua.</p>
+            <a href="/ProdSplitHP" class="inline-block">
+            <button class="btn-primary py-2 px-4 rounded mt-3 hover:bg-orange-700">Ver más</button>
+        </a>
+        </div>
+
+
+        <!-- Productos para Colectores -->
+        <div class="product-card" data-category="colectores">
+            <Image src={prod5} alt="Colectores Presurizados" class="rounded-lg shadow" loading="eager" />
+            <h3 class="text-lg font-bold text-gray-800">Colectores Presurizados</h3>
+            <p class="text-gray-600">Alta durabilidad y resistencia a la corrosión.</p>
+            <a href="/ProdColector" class="inline-block">
+            <button class="btn-primary py-2 px-4 rounded mt-3 hover:bg-orange-700">Ver más</button></a>
+        </div>
+
+        <!-- Productos para Tanques -->
+        <div class="product-card" data-category="tanques">
+            <Image src={prod6} alt="Tanques Intercambiadores" class="rounded-lg shadow" loading="eager" />
+            <h3 class="text-lg font-bold text-gray-800">Tanques Intercambiadores</h3>
+            <p class="text-gray-600">Optimiza el intercambio de calor para sistemas solares.</p>
+            <a href="/ProdTanques" class="inline-block">
+            <button class="btn-primary py-2 px-4 rounded mt-3 hover:bg-orange-700">Ver más</button></a>
+        </div>
+
+        <div class="product-card" data-category="accesorios">
+            <Image src={prod7} alt="Accesorios Solares" class="rounded-lg shadow" loading="eager" />
+            <h3 class="text-lg font-bold text-gray-800">Accesorios Solares</h3>
+            <p class="text-gray-600">Complementos esenciales para tu sistema de terma Solstac.</p>
+            <a href="/ProdAccesorios" class="inline-block">
+            <button class="btn-primary py-2 px-4 rounded mt-3 hover:bg-orange-700">Ver más</button></a>
+        </div>
+
+        </div>
+        </div>
+
+<script>
+document.querySelectorAll('.filter-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        const filter = this.getAttribute('data-filter');
+        document.querySelectorAll('.product-card').forEach(card => {
+            if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+});
+</script>
+
+</body>
+</html>

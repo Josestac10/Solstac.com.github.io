@@ -1,0 +1,413 @@
+---
+import { Image } from "astro:assets";
+import term1 from "/src/images/Productos/terma1.jpg";
+import terma11 from "/src/images/Productos/terma11.jpg"
+import terma12 from "/src/images/Productos/terma12.jpg"
+---
+
+<section class="lg:flex">
+  <div class="lg:w-1/2 ml-8">
+    <div class="grid gap-4">
+        <div class="flex justify-center ml-7"> 
+            <Image src={term1} class="h-auto max-w-full rounded-lg" alt="" />
+        </div>
+        <div class="grid grid-cols-5 gap-4 justify-center">
+            <div>
+                <Image src={terma11} class="h-auto max-w-full rounded-lg ml-8" alt="" />
+            </div>
+            <div>
+                <Image src={terma12} class="h-auto max-w-full rounded-lg ml-8" alt="" />
+            </div>
+            <!-- Puedes agregar más imágenes aquí si es necesario -->
+        </div>
+    </div>
+</div>
+
+
+
+  <div class="lg:w-1/2 p-6 flex justify-center items-center text-lg">
+    <div class="text-center lg:text-left lg:block ms:text-left">
+      <p class="text-lg font-semibold underline text-orange-500">TANQUE:</p>
+      <li>Interior acero inoxidable alimentario</li>
+      <li>Exterior Acero PVDF ó Acero INOX</li>
+      <p class="text-lg font-semibold underline mt-3 text-orange-500">
+        AISLAMIENTO TANQUE:
+      </p>
+      <li>Poliuretano 5 cm</li>
+      <p class="text-lg font-semibold underline mt-3 text-orange-500">
+        ESTRUCTURA:
+      </p>
+      <li>Aleación aluminio elegante</li>
+      <p class="text-lg font-semibold underline mt-3 text-orange-500">
+        TUBOS DE VACIO:
+      </p>
+      <li>Borosilicato resistente</li>
+      <li>Exterior Acero PVDF ó Acero INOX</li>
+      <li>Tratamiento metálico en 3 capas</li>
+      <li>Absorción extra super rendimiento</li>
+      <li>Metal interior para transparencia eterna</li>
+      <p class="text-lg font-semibold underline mt-3 text-orange-500">
+        MANUAL DE INSTALACION:
+      </p>
+      <li>Operación,montaje, mantenimiento</li>
+    </div>
+  </div>
+</section>
+
+<section class="conten-center">
+  <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+    <ul
+      class="flex flex-wrap -mb-px text-sm font-medium text-center justify-center items-center"
+      id="default-styled-tab"
+      data-tabs-toggle="#default-styled-tab-content"
+      data-tabs-active-classes="text-orange-500 dark:text-purple-500 dark:hover:text-purple-500 border-orange-500 dark:border-purple-500"
+      data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700"
+      role="tablist"
+    >
+      <li class="me-2 text-base" role="presentation">
+        <button
+          class="inline-block p-4 border-b-2 rounded-t-lg"
+          id="profile-styled-tab"
+          data-tabs-target="#styled-profile"
+          type="button"
+          role="tab"
+          aria-controls="profile"
+          aria-selected="false">Medidas</button
+        >
+      </li>
+      <li class="me-2 text-base" role="presentation">
+        <button
+          class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+          id="dashboard-styled-tab"
+          data-tabs-target="#styled-dashboard"
+          type="button"
+          role="tab"
+          aria-controls="dashboard"
+          aria-selected="false">Especificaciones</button
+        >
+      </li>
+      <li class="me-2 text-base" role="presentation">
+        <button
+          class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+          id="settings-styled-tab"
+          data-tabs-target="#styled-settings"
+          type="button"
+          role="tab"
+          aria-controls="settings"
+          aria-selected="false">Incluyen</button
+        >
+      </li>
+      <li class="text-base" role="presentation">
+        <button
+          class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+          id="contacts-styled-tab"
+          data-tabs-target="#styled-contacts"
+          type="button"
+          role="tab"
+          aria-controls="contacts"
+          aria-selected="false">Conexiones y Recomendaciones</button
+        >
+      </li>
+    </ul>
+  </div>
+
+  <div id="default-styled-tab-content">
+    <div
+      class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
+      id="styled-profile"
+      role="tabpanel"
+    >
+      <div class="relative overflow-x-auto">
+        <table
+          class="w-full text-base text-left rtl:text-right text-black dark:text-gray-400 md:table-fixed"
+        >
+          <thead
+            class="text-orange-500 bg-orange-100 text-center dark:bg-gray-700 dark:text-gray-400"
+          >
+            <tr>
+              <th scope="col" class="px-6 py-3 border-r border-orange-300">
+                Capacidad
+              </th>
+              <th scope="col" class="px-6 py-3 border-r border-orange-300">
+                N° Tubos
+              </th>
+              <th scope="col" class="px-6 py-3 text-center" colspan="5">
+                Medidas (mm)
+              </th>
+            </tr>
+          </thead>
+
+          <tbody class="text-center bg-orange-100">
+            <tr>
+              <td
+                class="px-6 py-4 text-orange-500 bg-orange-100 text-center dark:bg-gray-700 dark:text-gray-400 font-bold border-r border-orange-300"
+              >
+                de Tanque
+              </td>
+
+              <td
+                class="px-6 py-4 text-orange-500 bg-orange-100 text-center dark:bg-gray-700 dark:text-gray-400 font-bold border-r border-orange-300"
+                >Convencional</td
+              >
+              <td
+                class="px-6 py-4 text-ms text-orange-500 font-semibold border-r border-t border-orange-300"
+                >A
+              </td>
+              <td
+                class="px-6 py-4 text-ms text-orange-500 font-semibold border-r border-t border-orange-300"
+                >B
+              </td>
+              <td
+                class="px-6 py-4 text-ms text-orange-500 font-semibold border-r border-t border-orange-300"
+                >C
+              </td>
+              <td
+                class="px-6 py-4 text-ms text-orange-500 font-semibold border-r border-t border-orange-300"
+                >D
+              </td>
+              <td
+                class="px-6 py-4 text-ms text-orange-500 font-semibold border-t border-orange-300"
+                >E
+              </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                >100L</th
+              >
+              <td class="px-6 py-4 font-medium text-gray-900 border-l"> 10 </td>
+              <td class="px-6 py-4 font-medium text-gray-900 border-l">
+                890
+              </td>
+              <td class="px-6 py-4 font-medium text-gray-900"> 860 </td>
+              <td class="px-6 py-4 font-medium text-gray-900"> 1150 </td>
+              <td class="px-6 py-4 font-medium text-gray-900"> 1650 </td>
+              <td class="px-6 py-4 font-medium text-gray-900 border-r">
+                2010
+              </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              >
+                150L
+              </th>
+              <td class="px-6 py-4 font-medium text-gray-900 border-l"> 15 </td>
+              <td class="px-6 py-4 font-medium text-gray-900 border-l">
+                1290
+              </td>
+              <td class="px-6 py-4 font-medium text-gray-900"> 1260 </td>
+              <td class="px-6 py-4 font-medium text-gray-900"> 1150 </td>
+              <td class="px-6 py-4 font-medium text-gray-900"> 1650 </td>
+              <td class="px-6 py-4 font-medium text-gray-900 border-r">
+                2010
+              </td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800 border-b">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              >
+                200L
+              </th>
+              <td class="px-6 py-4 font-medium text-gray-900 border-l"> 20 </td>
+              <td class="px-6 py-4 font-medium text-gray-900 border-l">
+                1980
+              </td>
+              <td class="px-6 py-4 font-medium text-gray-900"> 1260 </td>
+              <td class="px-6 py-4 font-medium text-gray-900"> 1150 </td>
+              <td class="px-6 py-4 font-medium text-gray-900"> 1650 </td>
+              <td class="px-6 py-4 font-medium text-gray-900 border-r">
+                2010
+              </td>
+            </tr>
+
+            <tr class="bg-white dark:bg-gray-800 border-b">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              >
+                240L
+              </th>
+              <td class="px-6 py-4 font-medium text-gray-900 border-l"> 24 </td>
+              <td class="px-6 py-4 font-medium text-gray-900 border-l">
+                2460
+              </td>
+              <td class="px-6 py-4 font-medium text-gray-900"> 1260 </td>
+              <td class="px-6 py-4 font-medium text-gray-900"> 1150 </td>
+              <td class="px-6 py-4 font-medium text-gray-900"> 1650 </td>
+              <td class="px-6 py-4 font-medium text-gray-900 border-r">
+                2010
+              </td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800 border-b">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              >
+                300L
+              </th>
+              <td class="px-6 py-4 font-medium text-gray-900 border-l"> 30 </td>
+              <td class="px-6 py-4 font-medium text-gray-900 border-l">
+                2690
+              </td>
+              <td class="px-6 py-4 font-medium text-gray-900"> 1260 </td>
+              <td class="px-6 py-4 font-medium text-gray-900"> 1150 </td>
+              <td class="px-6 py-4 font-medium text-gray-900"> 1650 </td>
+              <td class="px-6 py-4 font-medium text-gray-900 border-r">
+                2010
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div
+  class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
+  id="styled-dashboard"
+  role="tabpanel"
+  aria-labelledby="dashboard-tab"
+>
+  <div class="relative overflow-x-auto">
+    <table class="w-full text-sm text-gray-500 dark:text-gray-400">
+      <thead class="text-orange-500 bg-orange-100 text-center dark:bg-gray-700">
+        <tr>
+          <!-- Ajusta el width para controlar la separación -->
+          <th scope="col" class="w-1/2 px-6 py-3 text-right">Característica</th>
+          <th scope="col" class="w-1/2 px-6 py-3 text-left">Especificaciones</th>
+        </tr>
+      </thead>
+      <tbody class="bg-white dark:bg-gray-800">
+        <tr>
+          <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Salida de agua caliente</td>
+          <td class="w-1/2 px-6 py-4 text-left">Macho 1/2" o 3/4"</td>
+        </tr>
+        <tr>
+          <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Entrada de agua fría</td>
+          <td class="w-1/2 px-6 py-4 text-left">Macho 1/2"</td>
+        </tr>
+        <tr>
+          <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Entrada de la Resistencia</td>
+          <td class="w-1/2 px-6 py-4 text-left">TAPA</td>
+        </tr>
+        <tr>
+          <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Entrada del sensor</td>
+          <td class="w-1/2 px-6 py-4 text-left">TAPA</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div
+  class="hidden rounded-lg bg-gray-50 dark:bg-gray-800"
+  id="styled-settings"
+  role="tabpanel"
+  aria-labelledby="settings-tab"
+>
+  <div class="relative overflow-x-auto">
+    <table class="w-full text-sm text-gray-500 dark:text-gray-400">
+      <thead class="text-orange-500 bg-orange-100 text-center dark:bg-gray-700">
+        <tr>
+          <th scope="col" class="w-1/2 px-6 py-3 text-right">Componente</th>
+          <th scope="col" class="w-1/2 px-6 py-3 text-left">Detalles</th>
+        </tr>
+      </thead>
+      <tbody class="bg-white dark:bg-gray-800">
+        <tr>
+          <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Válvula de Paso</td>
+          <td class="w-1/2 px-6 py-4 text-left">1/2"</td>
+        </tr>
+        <tr>
+          <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Válvula</td>
+          <td class="w-1/2 px-6 py-4 text-left">Check</td>
+        </tr>
+        <tr>
+          <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Tubo respiradero</td>
+          <td class="w-1/2 px-6 py-4 text-left"><!-- Aquí falta un detalle, puedes completarlo --></td>
+        </tr>
+        <tr>
+          <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Mini tanque</td>
+          <td class="w-1/2 px-6 py-4 text-left">8L</td>
+        </tr>
+        <tr>
+          <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Mini controlador</td>
+          <td class="w-1/2 px-6 py-4 text-left">Pilas</td>
+        </tr>
+        <tr>
+          <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Barra sensor roscado</td>
+          <td class="w-1/2 px-6 py-4 text-left">20m de cable</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+<div
+  class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
+  id="styled-contacts"
+  role="tabpanel"
+  aria-labelledby="contacts-tab"
+>
+  <div class="relative overflow-x-auto">
+    <table class="w-full text-sm text-gray-500 dark:text-gray-400">
+      <thead class="text-orange-500 bg-orange-100 text-center dark:bg-gray-700">
+        <tr>
+          <th scope="col" class="w-1/2 px-6 py-3 text-right">Conexión</th>
+          <th scope="col" class="w-1/2 px-6 py-3 text-left">Detalles</th>
+        </tr>
+      </thead>
+      <tbody class="bg-white dark:bg-gray-800">
+        <tr>
+          <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Salida de agua caliente</td>
+          <td class="w-1/2 px-6 py-4 text-left">Macho 1/2" o 3/4"</td>
+        </tr>
+        <tr>
+          <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Entrada de agua fría</td>
+          <td class="w-1/2 px-6 py-4 text-left">Macho 1/2"</td>
+        </tr>
+        <tr>
+          <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Entrada de la Resistencia</td>
+          <td class="w-1/2 px-6 py-4 text-left">TAPA</td>
+        </tr>
+        <tr>
+          <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Entrada del sensor</td>
+          <td class="w-1/2 px-6 py-4 text-left">TAPA</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="text-ms text-orange-500 font-semibold mb-3 mt-3 text-center"></div>
+  <div class="relative overflow-x-auto">
+    <table class="w-full text-sm text-gray-500 dark:text-gray-400">
+      <thead class="text-orange-500 bg-orange-100 text-center dark:bg-gray-700">
+        <tr>
+          <th scope="col" class="px-6 py-3 text-center">Recomendación</th>
+        </tr>
+      </thead>
+      <tbody class="bg-white dark:bg-gray-800">
+        <tr>
+          <td class="px-6 py-4 text-center">
+            Evitar la exposición directa al sol de los tubos que no contienen agua para evitar problemas de choque térmico.
+          </td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 text-center">
+            Aislar los tubos de agua caliente expuestos y evitar sombras sobre el captador solar.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+</section>

@@ -1,0 +1,203 @@
+---
+import { Image } from "astro:assets";
+import tank1 from "/src/images/Productos/tank1.jpg";
+import tank2 from "/src/images/Productos/tank2.jpg"
+import tank3 from "/src/images/Productos/tank3.png"
+---
+
+<section class="lg:flex">
+  <div class="lg:w-1/2 ml-8">
+    <div class="grid gap-4">
+        <div class="flex justify-center">
+            <Image src={tank1} class="h-auto max-w-full rounded-lg" alt="" />
+        </div>
+        <div class="grid grid-cols-5 gap-4 justify-center ml-8">
+            <div>
+                <Image src={tank2} class="h-auto max-w-full rounded-lg" alt="" />
+            </div>
+            <div>
+                <Image src={tank3} class="h-auto max-w-full rounded-lg" alt="" />
+            </div>
+            <!-- Puedes agregar más imágenes aquí si es necesario -->
+        </div>
+    </div>
+</div>
+
+  <div class="lg:w-1/2 p-6 flex justify-center items-center text-lg">
+    <div class="text-center lg:text-left lg:block ms:text-left">
+      <p class="text-lg font-semibold underline text-orange-500">CARACTERÍSTICAS DEL TANQUE:</p>
+      <li>Ubicación interna para mayor eficiencia térmica.</li>
+      <li>Configuración con uno o dos serpentines según la fuente de calor.</li>
+      <li>Aislamiento de poliuretano para conservar la temperatura.</li>
+      <li>Control inteligente de temperatura y seguridad.</li>
+      <p class="text-lg font-semibold underline mt-3 text-orange-500">APLICACIONES:</p>
+      <li>Uso residencial, en piscinas, hoteles, y para calefacción.</li>
+      <li>Optimiza el uso de la energía solar para calentar agua.</li>
+      <li>Equipos diseñados para alta temperatura y presión.</li>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="content-center">
+  <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+    <ul
+      class="flex flex-wrap -mb-px text-sm font-medium text-center justify-center items-center"
+      id="default-styled-tab"
+      data-tabs-toggle="#default-styled-tab-content"
+      data-tabs-active-classes="text-orange-500 dark:text-purple-500 dark:hover:text-purple-500 border-orange-500 dark:border-purple-500"
+      data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700"
+      role="tablist"
+    >
+      <li class="me-2 text-base" role="presentation">
+        <button
+          class="inline-block p-4 border-b-2 rounded-t-lg"
+          id="profile-styled-tab"
+          data-tabs-target="#styled-profile"
+          type="button"
+          role="tab"
+          aria-controls="profile"
+          aria-selected="false">Medidas</button
+        >
+      </li>
+      <li class="me-2 text-base" role="presentation">
+        <button
+          class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+          id="dashboard-styled-tab"
+          data-tabs-target="#styled-dashboard"
+          type="button"
+          role="tab"
+          aria-controls="dashboard"
+          aria-selected="false">Especificaciones</button
+        >
+      </li>
+      <li class="text-base" role="presentation">
+        <button
+          class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+          id="contacts-styled-tab"
+          data-tabs-target="#styled-contacts"
+          type="button"
+          role="tab"
+          aria-controls="contacts"
+          aria-selected="false">Aplicaciones</button
+        >
+      </li>
+    </ul>
+  </div>
+
+  <div id="default-styled-tab-content">
+    <!-- Tab Medidas -->
+    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-profile" role="tabpanel">
+      <div class="relative overflow-x-auto">
+        <table class="w-full text-base text-left rtl:text-right text-black dark:text-gray-400 md:table-fixed">
+          <thead class="text-orange-500 bg-orange-100 text-center dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+              <th scope="col" class="px-6 py-3 border-r border-orange-300">Capacidad</th>
+              <th scope="col" class="px-6 py-3 border-r border-orange-300">Dimensiones (mm)</th>
+            </tr>
+          </thead>
+          <tbody class="text-center bg-orange-100">
+            <tr>
+              <td class="px-6 py-4 text-orange-500 bg-orange-100 text-center dark:bg-gray-700 dark:text-gray-400 font-bold border-r border-orange-300">150L</td>
+              <td class="px-6 py-4 text-orange-500 bg-orange-100 text-center dark:bg-gray-700 dark:text-gray-400 font-bold">450x1575</td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">200L</td>
+              <td class="px-6 py-4 font-medium text-gray-900">520x1515</td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800 border-b">
+              <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">300L</td>
+              <td class="px-6 py-4 font-medium text-gray-900">620x1520</td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800 border-b">
+              <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">500L</td>
+              <td class="px-6 py-4 font-medium text-gray-900">710x1715</td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800 border-b">
+              <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">700L</td>
+              <td class="px-6 py-4 font-medium text-gray-900">En ficha</td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800 border-b">
+              <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">1000L</td>
+              <td class="px-6 py-4 font-medium text-gray-900">En ficha</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Tab Especificaciones -->
+    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+      <div class="relative overflow-x-auto">
+        <table class="w-full text-sm text-gray-500 dark:text-gray-400">
+          <thead class="text-orange-500 bg-orange-100 text-center dark:bg-gray-700">
+            <tr>
+              <th scope="col" class="w-1/2 px-6 py-3 text-right">Característica</th>
+              <th scope="col" class="w-1/2 px-6 py-3 text-left">Detalle</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white dark:bg-gray-800">
+            <tr>
+              <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Materiales exterior e interior</td>
+              <td class="w-1/2 px-6 py-4 text-left">Acerp galvanizado, BTC340R</td>
+            </tr>
+            <tr>
+              <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Aislamiento</td>
+              <td class="w-1/2 px-6 py-4 text-left">Poliuretano expandido 40-50 mm</td>
+            </tr>
+            <tr>
+              <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Barra de magnesio</td>
+              <td class="w-1/2 px-6 py-4 text-left">Atrapa residuos</td>
+            </tr>
+            <tr>
+              <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Sensores y válvula</td>
+              <td class="w-1/2 px-6 py-4 text-left">Sensores de temperatura, válvula de seguridad T/P</td>
+            </tr>
+            <tr>
+              <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Resistencia eléctrica</td>
+              <td class="w-1/2 px-6 py-4 text-left">1000W - 1500W - 2500W</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Tab Aplicaciones -->
+    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-contacts" role="tabpanel" aria-labelledby="contacts-tab">
+      <div class="relative overflow-x-auto">
+        <table class="w-full text-sm text-gray-500 dark:text-gray-400">
+          <thead class="text-orange-500 bg-orange-100 text-center dark:bg-gray-700">
+            <tr>
+              <th scope="col" class="px-6 py-3 text-center">Aplicación</th>
+              <th scope="col" class="px-6 py-3 text-center">Descripción</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white dark:bg-gray-800">
+            <tr>
+              <td class="px-6 py-4 text-center">Edificios de departamentos</td>
+              <td class="px-6 py-4 text-center">Tanque acumulador individual para cada departamento, conexión a red solar única.</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 text-center">Piscinas</td>
+              <td class="px-6 py-4 text-center">Acumulador de inercia para climatización, garantiza ACS por excesos de temperatura.</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 text-center">Hoteles y Residencias</td>
+              <td class="px-6 py-4 text-center">Tanques centralizados para agua caliente instantánea, reduce pérdidas de agua.</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 text-center">Calefacción</td>
+              <td class="px-6 py-4 text-center">Tanque independiente para circuito de suelo radiante.</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 text-center">Negocios con necesidades térmicas superiores a 60ºC</td>
+              <td class="px-6 py-4 text-center">Hibridación con otros sistemas para mantener temperatura de consigna.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

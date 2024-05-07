@@ -1,0 +1,51 @@
+---
+// Importa los componentes necesarios de Flowbite y Tailwind CSS
+import 'flowbite';
+---
+
+<div class="bg-white text-orange-500 p-8">
+    <h2 class="text-2xl font-bold text-orange-700 mb-6">Preguntas Frecuentes sobre la Energía Solar Térmica</h2>
+    <div id="faq-accordion" class="flowbite">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item bg-white border border-orange-200">
+                <h2 class="accordion-header mb-0" id="headingOne">
+                    <button class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-orange-800 text-left bg-orange-100 border-0 rounded-none transition focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ¿Qué es la energía solar térmica?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body py-4 px-5">
+                        La energía solar térmica aprovecha el calor del sol mediante colectores o paneles solares térmicos para calentar agua o proporcionar calefacción.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repetir para cada pregunta -->
+            <div class="accordion-item bg-white border border-orange-200">
+                <h2 class="accordion-header mb-0" id="headingTwo">
+                    <button class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-orange-800 text-left bg-orange-100 border-0 rounded-none transition focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ¿Cómo funcionan los sistemas solares térmicos?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body py-4 px-5">
+                        Consisten en un captador solar que calienta el agua circulante, almacenándola en un depósito aislado para su uso en agua caliente sanitaria (ACS) y otros procesos.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-white border border-orange-200">
+                <h2 class="accordion-header mb-0" id="headingThree">
+                    <button class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-orange-800 text-left bg-orange-100 border-0 rounded-none transition focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ¿Qué beneficios tiene instalar energía solar térmica?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body py-4 px-5">
+                        Además de ahorrar en costos energéticos, reduce la emisión de gases de efecto invernadero, mejora la calidad del aire y aumenta el valor de la propiedad.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

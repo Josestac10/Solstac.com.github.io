@@ -1,0 +1,451 @@
+---
+import { Image } from "astro:assets";
+import sbout from "/src/images/about/about2.jpg";
+import sbout2 from "/src/images/about/about3.jpg";
+import sbout3 from "/src/images/about/about4.jpg";
+import sbout4 from "/src/images/about/about5.jpg";
+---
+
+<section
+  class="bg-cover bg-center bg-no-repeat bg-[url('/src/images/carousel/car5.jpg')] bg-gray-500 bg-blend-multiply w-full min-h-screen"
+>
+  <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+    <h1
+      class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
+    >
+      Potenciamos el Futuro con Energía Solar
+    </h1>
+    <p
+      class="mb-8 text-lg font-normal text-gray-100 lg:text-xl sm:px-16 lg:px-48"
+    >
+      En Solstac, nos dedicamos a transformar la manera en que el Perú utiliza
+      la energía, promoviendo soluciones sostenibles y renovables.
+    </p>
+    <div
+      class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0"
+    >
+      <a
+        href="/Productos"
+        class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-orange-500 hover:bg-orange-600 hover:text-white hover:scale-110 ease-in-out duration-300 border border-orange-500"
+      >
+        Mira nuestros productos
+        <svg
+          class="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 14 10"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+        </svg>
+      </a>
+      <a
+        href="/Contactanos"
+        class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 hover:scale-110 ease-in-out duration-300"
+      >
+        Más información
+      </a>
+    </div>
+  </div>
+
+</section>
+
+<section class="bg-white dark:bg-gray-900 py-12 lg:py-20">
+  <div
+    class="p-7 rounded-lg content-center hover:scale-105 ease-in-out duration-300 md:mx-96 mb-20 text-center"
+  >
+    <h2 class="text-2xl text-orange-500 font-extrabold mb-3">La Empresa</h2>
+    <p class="mx-3 my-3 font-medium text-xl">
+      SOLSTAC es una empresa que fabrica y distribuye productos solares
+      térmicos, siguiendo estándares de calidad europeos. Nuestro equipo técnico
+      ofrece asesoramiento constante en instalación y desarrollo de proyectos
+      con un enfoque en sostenibilidad y ecodiseño.
+    </p>
+  </div>
+  <div
+    class="px-4 mx-auto max-w-screen-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8"
+  >
+    <figure class="order-2 md:order-1 lg:order-1 pl-4">
+      <Image
+        src={sbout3}
+        alt="Quienes Somos"
+        class="rounded-lg hover:scale-105 ease-in-out duration-300"
+        loading="lazy"
+      />
+    </figure>
+    <figure class="order-3 md:order-1 lg:order-1 pl-4">
+      <Image
+        src={sbout2}
+        alt="Empresa"
+        class="rounded-lg hover:scale-105 ease-in-out duration-300"
+        loading="lazy"
+      />
+    </figure>
+  </div>
+</section>
+
+<section class="bg-white dark:bg-gray-900 pb-14 lg:py-20">
+  <div class="px-4 mx-auto max-w-screen-xl">
+    <div class="border border-gray-300 rounded-lg overflow-hidden mb-40">
+      <video class="w-full" autoplay muted controls>
+        <source src="/src/video/termavideo.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+</section>
+
+<section class="bg-white py-20 mt-16 relative">
+  <div class="container mx-auto flex flex-col md:flex-auto md:mt-0">
+    <!-- Contenedor de la imagen -->
+    <div
+      class="absolute flex -inset-5 -mt-52 justify-center items-center m-10 z-1 mb-8 md:mr-10"
+    >
+      <div class="w-full h-full object-cover md:ml-[270px]">
+        <Image src={sbout} alt="about2" class="mb-20" loading="lazy" />
+      </div>
+    </div>
+    <!-- Contenedor del texto -->
+    <div
+      class="max-w-md px-7 py-5 md:mb-44 bg-white rounded-lg shadow-md z-0 lg:ml-auto border-4 border-orange-500 mx-4 md:-mt-56"
+    >
+      <div class="flex flex-col justify-center items-center md:items-start">
+        <div class="p-4 rounded-lg">
+          <h2 class="text-2xl text-orange-500 font-bold mb-3">
+            ¿Quiénes somos?
+          </h2>
+          <p class="text-justify">
+            SOLSTAC es una empresa que fabrica y distribuye productos solares
+            térmicos, siguiendo rigurosos estándares de calidad europeos.
+            Nuestro equipo técnico altamente capacitado ofrece asesoramiento
+            constante en la instalación y desarrollo de proyectos, con un
+            enfoque centrado en la sostenibilidad y el ecodiseño. Además, nos
+            comprometemos a innovar constantemente para ofrecer soluciones
+            energéticas eficientes y respetuosas con el medio ambiente. Nuestra
+            pasión por la excelencia nos impulsa a buscar nuevas formas de
+            optimizar nuestros procesos y productos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-white py-20 mt-60 relative">
+  <div class="container mx-auto flex flex-col md:flex-auto md:mt-0">
+    <!-- Contenedor de la imagen -->
+    <div
+      class="absolute flex -inset-5 -mt-52 justify-center items-center m-10 z-1 mb-8 md:mr-10"
+    >
+      <div class="w-full h-full object-cover md:ml-[270px]">
+        <Image src={sbout4} alt="prod" class="mb-20" loading="lazy" />
+      </div>
+    </div>
+    <!-- Contenedor del texto -->
+    <div
+      class="max-w-md px-7 py-5 bg-white rounded-lg shadow-md z-0 lg:ml-auto border-4 border-orange-500 mx-4 md:-mt-56"
+    >
+      <div class="flex flex-col justify-center items-center md:items-start">
+        <div class="p-4 rounded-lg">
+          <h2 class="text-2xl text-orange-500 font-bold mb-3">Producción</h2>
+          <p class="text-justify">
+            El proceso de fabricación comienza con una rigurosa inspección de
+            toda la materia prima adquirida. El material es seleccionado para su
+            utilización en las líneas de producción, es aprobado en sus
+            propiedades y dimensiones para obtener un producto de primera
+            calidad.
+          </p>
+          <br />
+          <ol class="list-disc pl-5">
+            <li>
+              <span class="font-medium">Mecanizado :</span> Se adquieren las primeras
+              piezas para cada equipo.
+            </li>
+            <li>
+              <span class="font-medium">Moldeado:</span> Se da forma a las partes,
+              tanques acumuladores.
+            </li>
+            <li>
+              <span class="font-medium">Prensado:</span> Uniones fuertes sin soldadura.
+            </li>
+            <li>
+              <span class="font-medium">Soldadura:</span> Uniones fuertes y pruebas
+              de resistencia.
+            </li>
+            <li>
+              <span class="font-medium">Ensamblado:</span> Unión de partes elaboradas
+              y control de calidad.
+            </li>
+            <li><span class="font-medium">Etiquetado y embalado.</span></li>
+            <li><span class="font-medium">Producto final.</span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="md:mx-96 my-7">
+  <div
+    class="grid mb-8 border border-orange-400 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2 bg-white dark:bg-gray-800"
+  >
+    <figure
+      class="flex flex-col items-center justify-center p-8 text-center hover:bg-orange-500  bg-white border-b border-orange-400 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-gray-800 dark:border-gray-700"
+    >
+      <blockquote
+      class="max-w-2xl mx-auto mb-4 text-black lg:mb-8 dark:text-gray-400  hover:text-white" 
+      >
+        <h3 class="text-2xl  font-bold mb-3">
+          Nosotros
+        </h3>
+        <p class="my-4 text-justify ">
+          SOLSTAC no solo se enfoca en la producción de equipos solares
+          térmicos; estamos dedicados a liderar el camino hacia una transición
+          energética sostenible en Perú. A través de la innovación y el
+          desarrollo de nuevas tecnologías, promovemos un compromiso firme con
+          la sostenibilidad, el ecodiseño y la protección del medio ambiente.
+          Nuestros valores, que incluyen la seguridad, el compromiso de trabajo,
+          la responsabilidad, y la mejora continua, nos guían hacia la
+          excelencia y el profesionalismo en todo lo que hacemos.
+        </p>
+      </blockquote>
+    </figure>
+    <figure
+      class="flex flex-col items-center  justify-center p-8 text-center  hover:bg-orange-500  bg-white border-b border-orange-400 md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700"
+      >
+      <blockquote class="max-w-2xl mx-auto mb-4 text-black lg:mb-8 dark:text-gray-400  hover:text-white">
+      <h3 class="text-2xl font-bold mb-3">
+        Valores
+      </h3>
+        <p class="my-4 text-justify">
+          Somos una organización comprometida con la innovación y el desarrollo
+          de nuevas tecnologías, enfocada en la sostenibilidad y el ecodiseño,
+          con un compromiso firme hacia la seguridad y la responsabilidad.
+          Promovemos la mejora continua y la calidad total, fomentando el
+          espíritu de equipo y el profesionalismo en todas nuestras accione
+        </p>
+      </blockquote>
+    </figure>
+    <figure
+      class="flex flex-col items-center justify-center p-8 text-center hover:bg-orange-500 bg-white border-b border-orange-400 md:rounded-es-lg md:border-b-0 md:border-e dark:bg-gray-800 dark:border-gray-700"
+    >
+      <blockquote
+      class="max-w-2xl mx-auto mb-4 text-black lg:mb-8 dark:text-gray-400  hover:text-white"
+      >
+        <h3 class="text-2xl font-bold mb-3">
+          Misión
+        </h3>
+        <p class="my-4 text-justify">
+          Nuestra misión es revolucionar el mercado energético peruano mediante
+          la promoción del uso de energías renovables, específicamente la
+          energía solar. Estamos comprometidos con el desarrollo de productos
+          que no solo satisfacen las necesidades energéticas de nuestros
+          clientes, sino que también contribuyen positivamente al medio ambiente
+          y al futuro sostenible de nuestro planeta. A través de la innovación
+          constante y el compromiso con la calidad, buscamos empoderar a las
+          familias y empresas peruanas, permitiéndoles lograr independencia
+          energética y fomentar un cambio positivo en la sociedad.
+        </p>
+      </blockquote>
+    </figure>
+    <figure
+      class="flex flex-col items-center justify-center p-8 text-center bg-white  hover:bg-orange-500 border-orange-400 rounded-b-lg md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700"
+    >
+      <blockquote
+        class="max-w-2xl mx-auto mb-4 text-black lg:mb-8 dark:text-gray-400  hover:text-white"
+      >
+        <h3 class="text-2xl font-bold mb-3">
+          Visión
+        </h3>
+        <p class="my-4 text-justify">
+          Aspiramos a ser líderes en el sector de energía renovable en Perú,
+          reconocidos por nuestra capacidad para innovar y crear soluciones
+          sostenibles que se anticipen a las necesidades del futuro. Nuestra
+          visión es convertirnos en un referente a nivel nacional e
+          internacional, demostrando que es posible combinar la excelencia
+          tecnológica con el respeto por el medio ambiente. Deseamos ser una
+          fuente de inspiración para empresas y comunidades, demostrando que el
+          compromiso con la sostenibilidad y el desarrollo tecnológico pueden ir
+          de la mano para crear un futuro más verde y sostenible.
+        </p>
+      </blockquote>
+    </figure>
+  </div>
+</section>
+
+<section class="justify-center md:mx-96 mb-40">
+  <ol class="relative border-l border-orange-500">
+    <!-- Introducción de Solstac en Perú, 2013 -->
+    <li class="mb-10 ml-4">
+      <div
+        class="absolute w-3 h-3 bg-orange-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+      >
+      </div>
+      <time
+        class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+        >2013</time
+      >
+      <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+        Empresa Solstac en Perú
+      </h3>
+      <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+        Introduce en Perú productos de nueva era, con un equipo que traslada
+        conocimientos y experiencias del mercado europeo en energía solar.
+      </p>
+    </li>
+
+    <!-- Presentación en feria de la construcción, Trujillo, 2013 -->
+    <li class="mb-10 ml-4">
+      <div
+        class="absolute w-3 h-3 bg-orange-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+      >
+      </div>
+      <time
+        class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+        >Agosto 2013</time
+      >
+      <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+        Feria de la Construcción en Trujillo
+      </h3>
+      <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+        Presentación de Solstac en la feria de la construcción, recibiendo una
+        gran aceptación del público.
+      </p>
+    </li>
+
+    <!-- Artículo sobre energía solar en Latinoamérica, 2013 -->
+    <li class="mb-10 ml-4">
+      <div
+        class="absolute w-3 h-3 bg-orange-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+      >
+      </div>
+      <time
+        class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+        >2013</time
+      >
+      <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+        Artículo sobre Energía Solar
+      </h3>
+      <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+        Publicación del artículo "Energía Solar en Latinoamérica: Recurso
+        garantizado por millones de años". <a
+          href="/src/video/entrevista.pdf"
+          target="_blank"
+          class="text-orange-500 hover:underline">Click para leer el artículo</a
+        >.
+      </p>
+    </li>
+
+    <!-- Expansión a otras provincias, 2013 -->
+    <li class="mb-10 ml-4">
+      <div
+        class="absolute w-3 h-3 bg-orange-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+      >
+      </div>
+      <time
+        class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+        >Post-Agosto 2013</time
+      >
+      <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+        Expansión a más provincias
+      </h3>
+      <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+        Solstac amplía su campo de actuación a otras provincias por demanda del
+        mercado, trabajando para llegar a todo el Perú.
+      </p>
+    </li>
+
+    <!-- Expansión y aceptación en 2014 -->
+    <li class="mb-10 ml-4">
+      <div
+        class="absolute w-3 h-3 bg-orange-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+      >
+      </div>
+      <time
+        class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+        >2014</time
+      >
+      <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+        Expansión Continua
+      </h3>
+      <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+        Continúa trabajando en más provincias, cambiando costumbres y
+        pensamientos en la Sierra de la Libertad. Lambayeque y Piura muestran
+        potencial sorprendente.
+      </p>
+    </li>
+
+    <!-- Acuerdo para seminario, 2014 -->
+    <li class="mb-10 ml-4">
+      <div
+        class="absolute w-3 h-3 bg-orange-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+      >
+      </div>
+      <time
+        class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+        >2014</time
+      >
+      <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+        Acuerdo para Seminario
+      </h3>
+      <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+        Acuerdo con el Colegio de Ingenieros de la Libertad y el Capítulo de
+        Ingeniería Eléctrica, Mecánica y Mecatrónica para realizar el primer
+        seminario en agosto.
+      </p>
+    </li>
+
+    <!-- Primer seminario sobre termas solares, 2014 -->
+    <li class="ml-4">
+      <div
+        class="absolute w-3 h-3 bg-orange-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+      >
+      </div>
+      <time
+        class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+        >Agosto 2014</time
+      >
+      <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+        Primer Seminario "Termas Solares"
+      </h3>
+      <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+        Se realiza el primer seminario sobre el aprovechamiento de la energía
+        solar térmica, con énfasis en fundamentos, instalaciones, cálculo y
+        regulación. Pronto en otras ciudades.
+      </p>
+    </li>
+  </ol>
+</section>
+
+<style>
+  section .animate {
+    transition: 2s;
+  }
+  .animate {
+    transform: translateX(-100%);
+  }
+  .animate-scroll .animate {
+    transform: translateX(0);
+  }
+</style>
+<script>
+  let sections = document.querySelectorAll("section");
+
+  window.onscroll = () => {
+    sections.forEach((sec) => {
+      let top = window.scrollY;
+      let offset = sec.offsetTop - 150;
+      let height = sec.offsetHeight;
+
+      if (top >= offset && top < offset + height) {
+        sec.classList.add("animate-scroll");
+      } else {
+        sec.classList.remove("animate-scroll");
+      }
+    });
+  };
+</script>

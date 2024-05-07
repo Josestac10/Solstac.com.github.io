@@ -1,0 +1,20 @@
+---
+import 'flowbite';
+import Layout from '../layouts/Layout.astro';
+import Foot from '../components/Foot.astro';
+import Product from '../components/Product.astro';
+import ProdCol from '../components/ProdCol.astro';
+
+---
+
+<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+<Layout title="Solstac - Productos Termas" />
+  <div class="CarouselWrapper">
+      <div>
+        <ProdCol />
+        <slot />
+      </div>
+  </div>
+<Foot />
+
+<style></style>

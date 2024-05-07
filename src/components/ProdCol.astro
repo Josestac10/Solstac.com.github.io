@@ -1,0 +1,178 @@
+---
+import { Image } from "astro:assets";
+import col1 from "/src/images/Productos/col1.png";
+import col2 from "/src/images/Productos/col2.jpg"
+import col3 from "/src/images/Productos/col3.jpg"
+---
+
+<section class="lg:flex">
+  <div class="lg:w-1/2 ml-8">
+      <div class="grid gap-4">
+          <div class="flex justify-center ml-8">
+              <Image src={col1} class="h-auto max-w-full rounded-lg " alt="" />
+          </div>
+          <div class="grid grid-cols-5 gap-4 justify-center ml-8">
+              <div>
+                  <Image src={col2} class="h-auto max-w-full rounded-lg " alt="" />
+              </div>
+              <div>
+                  <Image src={col3} class="h-auto max-w-full rounded-lg " alt="" />
+              </div>
+              <!-- Puedes agregar más imágenes aquí si es necesario -->
+          </div>
+      </div>
+  </div>
+
+  <div class="lg:w-1/2 p-6 flex justify-center items-center text-lg">
+    <div class="text-center lg:text-left lg:block ms:text-left">
+      <p class="text-lg font-semibold underline text-orange-500">COLECTOR SOLAR:</p>
+      <li>Utiliza tecnología de captación con tubos de vacío Heat Pipe</li>
+      <li>Aumenta el espacio de captación en techos y cubiertas</li>
+      <li>Para su funcionamiento es necesario grupos de bombeo e instalaciones de seguridad</li>
+      <p class="text-lg font-semibold underline mt-3 text-orange-500">
+        CARACTERÍSTICAS DE LOS TUBOS:
+      </p>
+      <li>Tecnología Heat Pipe, tubo de vacío con tubo de cobre interior</li>
+      <li>Material de vidrio borosilicato muy resistente</li>
+      <li>Recubrimiento metálico de absorción en tres capas</li>
+    </div>
+  </div>
+</section>
+
+
+<section class="content-center">
+  <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+    <ul
+      class="flex flex-wrap -mb-px text-sm font-medium text-center justify-center items-center"
+      id="default-styled-tab"
+      data-tabs-toggle="#default-styled-tab-content"
+      data-tabs-active-classes="text-orange-500 dark:text-purple-500 dark:hover:text-purple-500 border-orange-500 dark:border-purple-500"
+      data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700"
+      role="tablist"
+    >
+      <li class="me-2 text-base" role="presentation">
+        <button
+          class="inline-block p-4 border-b-2 rounded-t-lg"
+          id="profile-styled-tab"
+          data-tabs-target="#styled-profile"
+          type="button"
+          role="tab"
+          aria-controls="profile"
+          aria-selected="false">Medidas</button
+        >
+      </li>
+      <li class="me-2 text-base" role="presentation">
+        <button
+          class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+          id="dashboard-styled-tab"
+          data-tabs-target="#styled-dashboard"
+          type="button"
+          role="tab"
+          aria-controls="dashboard"
+          aria-selected="false">Especificaciones</button
+        >
+      </li>
+      <li class="me-2 text-base" role="presentation">
+        <button
+          class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+          id="settings-styled-tab"
+          data-tabs-target="#styled-settings"
+          type="button"
+          role="tab"
+          aria-controls="settings"
+          aria-selected="false">Incluyen</button
+        >
+      </li>
+    </ul>
+  </div>
+
+  <div id="default-styled-tab-content">
+    <!-- Tab Medidas -->
+    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-profile" role="tabpanel">
+      <div class="relative overflow-x-auto">
+        <table class="w-full text-base text-left rtl:text-right text-black dark:text-gray-400 md:table-fixed">
+          <thead class="text-orange-500 bg-orange-100 text-center dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+              <th scope="col" class="px-6 py-3 border-r border-orange-300">Tipo de colector</th>
+              <th scope="col" class="px-6 py-3 border-r border-orange-300">Dimensiones (mm)</th>
+              <th scope="col" class="px-6 py-3 text-center">Área (m²)</th>
+            </tr>
+          </thead>
+          <tbody class="text-center bg-orange-100">
+            <tr>
+              <td class="px-6 py-4 text-orange-500 bg-orange-100 text-center dark:bg-gray-700 dark:text-gray-400 font-bold border-r border-orange-300">10 tubos</td>
+              <td class="px-6 py-4 text-orange-500 bg-orange-100 text-center dark:bg-gray-700 dark:text-gray-400 font-bold border-r border-orange-300">1960 x 690</td>
+              <td class="px-6 py-4 text-ms text-orange-500 font-semibold">1,35</td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">15 tubos</td>
+              <td class="px-6 py-4 font-medium text-gray-900 border-l">1960 x 1180</td>
+              <td class="px-6 py-4 font-medium text-gray-900">2,35</td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800 border-b">
+              <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">20 tubos</td>
+              <td class="px-6 py-4 font-medium text-gray-900 border-l">1960 x 1560</td>
+              <td class="px-6 py-4 font-medium text-gray-900">3,10</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Tab Especificaciones -->
+    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+      <div class="relative overflow-x-auto">
+        <table class="w-full text-sm text-gray-500 dark:text-gray-400">
+          <thead class="text-orange-500 bg-orange-100 text-center dark:bg-gray-700">
+            <tr>
+              <th scope="col" class="w-1/2 px-6 py-3 text-right">Característica</th>
+              <th scope="col" class="w-1/2 px-6 py-3 text-left">Detalles</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white dark:bg-gray-800">
+            <tr>
+              <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Material de la caja del colector</td>
+              <td class="w-1/2 px-6 py-4 text-left">Aluminio</td>
+            </tr>
+            <tr>
+              <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Aislante</td>
+              <td class="w-1/2 px-6 py-4 text-left">Poliuretano y espuma a altas temperaturas</td>
+            </tr>
+            <tr>
+              <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Presión máxima</td>
+              <td class="w-1/2 px-6 py-4 text-left">8-10 bars</td>
+            </tr>
+            <tr>
+              <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Entradas</td>
+              <td class="w-1/2 px-6 py-4 text-left">Entrada y salida para agua, entrada para sensor de temperatura</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Tab Incluyen -->
+    <div class="hidden rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-settings" role="tabpanel" aria-labelledby="settings-tab">
+      <div class="relative overflow-x-auto">
+        <table class="w-full text-sm text-gray-500 dark:text-gray-400">
+          <thead class="text-orange-500 bg-orange-100 text-center dark:bg-gray-700">
+            <tr>
+              <th scope="col" class="w-1/2 px-6 py-3 text-right">Componente</th>
+              <th scope="col" class="w-1/2 px-6 py-3 text-left">Detalles</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white dark:bg-gray-800">
+            <tr>
+              <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Tecnología de tubos</td>
+              <td class="w-1/2 px-6 py-4 text-left">Heat Pipe, tubo de vacío con tubo de cobre interior</td>
+            </tr>
+            <tr>
+              <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Material de los tubos</td>
+              <td class="w-1/2 px-6 py-4 text-left">Vidrio borosilicato, recubrimiento metálico de absorción en tres capas</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

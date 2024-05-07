@@ -1,0 +1,482 @@
+---
+import "flowbite";
+import 'photoswipe/style.css';
+import { Image } from "astro:assets";
+import about11 from "/src/images/about2/about11.jpg";
+import about12 from "/src/images/about2/about12.jpg";
+import abt1 from "/src/images/Card/abt1.jpg";
+import about22 from "/src/images/about2/about22.jpg";
+import about23 from "/src/images/about2/about23.jpg";
+import about24 from "/src/images/about2/about24.jpg";
+import about31 from "/src/images/about2/about31.jpg";
+import about32 from "/src/images/about2/about32.jpg";
+import about33 from "/src/images/about2/about33.jpg";
+import about41 from "/src/images/about2/about41.jpg";
+import about44 from "/src/images/about2/about44.jpg";
+import about51 from "/src/images/about2/about51.jpg";
+import about52 from "/src/images/about2/about52.jpg";
+import about61 from "/src/images/about2/about61.jpg";
+import about62 from "/src/images/about2/about62.jpg";
+import about63 from "/src/images/about2/about63.jpg";
+import about64 from "/src/images/about2/about64.jpg";
+---
+
+<section
+  class="bg-cover bg-center bg-no-repeat bg-[url('/src/images/about2/about53.jpg')] bg-gray-500 bg-blend-multiply w-full min-h-screen mb-10"
+>
+  <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+    <h1
+      class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
+    >
+      Potenciamos el Futuro con Energía Solar
+    </h1>
+    <p
+      class="mb-8 text-lg font-normal text-gray-100 lg:text-xl sm:px-16 lg:px-48"
+    >
+      En Solstac, nos dedicamos a transformar la manera en que el Perú utiliza
+      la energía, promoviendo soluciones sostenibles y renovables.
+    </p>
+    <div
+      class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0"
+    >
+      <a
+        href="#energia"
+        class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-orange-500 hover:bg-orange-600 hover:text-white hover:scale-110 ease-in-out duration-300 border border-orange-500"
+      >
+        Saber más
+        <svg
+          class="w-3.5 h-3.5 ms-2 rotate-90"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 14 10"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+        </svg>
+      </a>
+      <a
+        href="/Contactanos"
+        class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 hover:scale-110 ease-in-out duration-300"
+      >
+        Más información
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+<div x-data="{ tab: 'solarEnergy' }" class="md:flex mx-8 mt-3 mb-10" id="energia">
+  <ul class="flex flex-col space-y-4 text-sm font-medium text-black dark:text-gray-400 md:me-4 mb-4 md:mb-0">
+    <li
+      @click="tab = 'solarEnergy'"
+      :class="{'bg-orange-500 rounded hover:scale-105 ease-in-out duration-300 text-white shadow-lg': tab === 'solarEnergy', 'hover:bg-orange-200': tab !== 'solarEnergy'}"
+      class="inline-flex items-center px-4 py-3 rounded-lg cursor-pointer transition duration-300 ease-in-out"
+    >
+      Conoce sobre la Energía Solar Térmica
+    </li>
+    <li
+      @click="tab = 'vacuumTube'"
+      :class="{'bg-orange-500 rounded mb-2 hover:scale-105 ease-in-out duration-300 text-white shadow-lg': tab === 'vacuumTube', 'hover:bg-orange-200': tab !== 'vacuumTube'}"
+      class="inline-flex items-center px-4 py-3 rounded-lg cursor-pointer transition duration-300 ease-in-out"
+    >
+      La tecnología del Tubo de Vacío
+    </li>
+    <li
+      @click="tab = 'heatPipe'"
+      :class="{'bg-orange-500 rounded mb-2 hover:scale-105 ease-in-out duration-300 text-white shadow-lg': tab === 'heatPipe', 'hover:bg-orange-200': tab !== 'heatPipe'}"
+      class="inline-flex items-center px-4 py-3 rounded-lg cursor-pointer transition duration-300 ease-in-out"
+    >
+      En qué consiste el Tubo de Vacío Heat Pipe
+    </li>
+    <li
+      @click="tab = 'benefits'"
+      :class="{'bg-orange-500 rounded mb-2 hover:scale-105 ease-in-out duration-300 text-white shadow-lg': tab === 'benefits', 'hover:bg-orange-200': tab !== 'benefits'}"
+      class="inline-flex items-center px-4 py-3 rounded-lg cursor-pointer transition duration-300 ease-in-out"
+    >
+      Los beneficios de un captador de tubos de vacío
+    </li>
+    <li
+      @click="tab = 'thermosiphon'"
+      :class="{'bg-orange-500 rounded mb-2 hover:scale-105 ease-in-out duration-300 text-white shadow-lg': tab === 'thermosiphon', 'hover:bg-orange-200': tab !== 'thermosiphon'}"
+      class="inline-flex items-center px-4 py-3 rounded-lg cursor-pointer transition duration-300 ease-in-out"
+    >
+      Efecto Termosifón
+    </li>
+    <li
+      @click="tab = 'environment'"
+      :class="{'bg-orange-500 rounded mb-2 hover:scale-105 ease-in-out duration-300 text-white shadow-lg': tab === 'environment', 'hover:bg-orange-200': tab !== 'environment'}"
+      class="inline-flex items-center px-4 py-3 rounded-lg cursor-pointer transition duration-300 ease-in-out"
+    >
+      Aportes al medio ambiente y a la economía familiar
+    </li>
+  </ul>
+  <div class="p-6 bg-gray-100 dark:bg-gray-800 text-black dark:text-gray-400 rounded-lg w-full">
+    <div x-show="tab === 'solarEnergy'">
+      <h3 class="text-lg font-bold text-orange-500 dark:text-white mb-2">Energía Solar Térmica</h3>
+      <p class="text-justify px-6 mb-2">
+          La energía solar representa la fuente más limpia y abundante de todas
+          las formas de energía conocidas. La radiación solar, que alberga
+          cantidades masivas de energía, desempeña un papel fundamental en
+          prácticamente todos los procesos naturales de nuestro planeta. La
+          energía solar térmica capitaliza esta radiación directamente,
+          transformándola en calor.
+      </p>
+      <p class="text-justify px-6 mb-2">
+          A través de una superficie colectora, se capta, aísla y transfiere la
+          energía hacia un fluido, usualmente agua, que se calienta durante el
+          transcurso del día. Dependiendo del diseño del sistema, el agua puede
+          alcanzar el punto de ebullición en poco tiempo, lo que exige
+          precauciones para prevenir posibles daños.
+      </p>
+      <p class="text-justify px-6 mb-2">
+          Un sistema de energía solar térmica puede ser hasta diez veces más
+          rentable que otras alternativas renovables que generan calor
+          equivalente, ya que evita la necesidad de conversión adicional. La
+          orientación e inclinación adecuadas de los colectores solares son
+          esenciales para optimizar la captación de energía solar en cada
+          ubicación terrestre.
+      </p>
+      <p class="text-justify px-6 mb-2">
+          La inclinación directamente afecta la eficiencia y producción de calor,
+          así como el retorno de la inversión total. Los paneles deben encararse
+          hacia el norte para aprovechar al máximo la trayectoria solar,
+          permitiendo que los rayos incidan perpendicularmente en el colector
+          desde la salida hasta la puesta del sol.
+      </p>
+      <p class="text-justify px-6 mb-2">
+          Es crucial considerar los obstáculos potenciales, como edificios,
+          árboles en crecimiento o futuras construcciones que podrían proyectar
+          sombras y afectar el rendimiento. Realizar cálculos de sombras precisos
+          puede maximizar el uso del espacio y prevenir obstrucciones entre
+          colectores. Además, la ubicación geográfica juega un rol vital en la
+          viabilidad del sistema, favoreciendo áreas costeras, montañosas y
+          altiplánicas.
+      </p>
+      <p class="text-justify px-6 mb-10">
+          Un seguimiento diligente de estos factores, junto con tecnologías
+          innovadoras como los tubos de vacío patentados, maximizan el potencial
+          de captación de radiación para calentar agua, cubriendo tanto las
+          necesidades familiares como industriales. Todo esto se logra con una
+          fuente de energía limpia y ecológica, promoviendo así un futuro más
+          sostenible.
+      </p>
+
+      <div> 
+        <div class=" px-4 mx-auto max-w-screen-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 pswp-gallery" id="gallery">
+          <div class="gallery-item" >
+            <a href="/src/images/about2/about11.jpg" data-pswp-width="800" data-pswp-height="501" target="_blank">
+              <figure class="order-2 md:order-1 lg:order-1 pl-4">
+                <Image
+                  src={about11}
+                  alt="about11"
+                  class="rounded-lg hover:scale-105 ease-in-out duration-300"
+                  loading="lazy"
+                />
+              </figure>
+            </a>
+          </div>
+      
+          <div class="gallery-item" >
+            <a href="/src/images/about2/about12.jpg" data-pswp-width="1039" data-pswp-height="648" target="_blank">
+              <figure class="order-3 md:order-1 lg:order-1 pl-4">
+                <Image
+                  src={about12}
+                  alt="about12"
+                  class="rounded-lg hover:scale-105 ease-in-out duration-300"
+                  loading="lazy"
+                />
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+
+  </div>
+    <div x-show="tab === 'vacuumTube'">
+      <h3 class="text-lg font-bold text-orange-500 dark:text-white mb-2">Tecnología del Tubo de Vacío</h3>
+      <p class="text-justify px-6 mb-2">
+        Los tubos de vacío Solstac son componentes esenciales de nuestros sistemas solares, responsables de convertir la energía solar en calor para calentar agua. Estos tubos están diseñados con dos capas de vidrio de borosilicato extremadamente resistente. El vidrio exterior es transparente, permitiendo que los rayos solares pasen con mínima reflexión, mientras que el interior está recubierto con una capa selectiva especial que maximiza la absorción de la radiación solar.
+      </p>
+      <p class="text-justify px-6 mb-2">
+        Durante el proceso de fabricación, los dos tubos concéntricos se fusionan en la parte superior y se evacúa el aire entre ellos, creando un vacío que es crucial para el rendimiento óptimo de los tubos. Además, se coloca un getter metálico en el interior para mantener la transparencia del vidrio a lo largo del tiempo. Este vacío alcanza niveles extremadamente bajos, lo que minimiza las pérdidas de conducción y convección en el tubo.
+      </p>
+      <p class="text-justify px-6 mb-10">
+        Los tubos de vacío Solstac pueden alcanzar temperaturas de ebullición en el agua a tan solo 40ºC y superar los 100ºC en condiciones de máxima exposición solar. Por esta razón, es fundamental que los tubos estén llenos de agua cuando se exponen al sol, para evitar daños por choque térmico. Con nuestra tecnología especializada y proceso de producción, garantizamos resultados excelentes y una eficiencia óptima en la captación de energía solar para satisfacer tus necesidades de calentamiento de agua de manera segura y eficaz.
+      </p> 
+      <div> 
+        <div class=" px-4 mx-auto max-w-screen-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 pswp-gallery" id="gallery">
+          <div class="gallery-item" >
+            <a href="/src/images/Card/abt1.jpg" data-pswp-width="800" data-pswp-height="600" target="_blank">
+              <figure class="order-2 md:order-1 lg:order-1 pl-4">
+                <Image
+                  src={abt1}
+                  alt="abt1"
+                  class="rounded-lg hover:scale-105 ease-in-out duration-300"
+                  loading="lazy"
+                />
+              </figure>
+            </a>
+          </div>
+      
+          <div class="gallery-item" >
+            <a href="/src/images/about2/about22.jpg" data-pswp-width="610" data-pswp-height="465" target="_blank">
+              <figure class="order-3 md:order-2 lg:order-2 pl-4">
+                <Image
+                  src={about22}
+                  alt="about22"
+                  class="rounded-lg hover:scale-105 ease-in-out duration-300"
+                  loading="lazy"
+                />
+              </figure>
+            </a>
+          </div>
+
+          <div class="gallery-item" >
+            <a href="/src/images/about2/about23.jpg" data-pswp-width="846" data-pswp-height="518" target="_blank">
+              <figure class="order-4 md:order-3 lg:order-3 pl-4">
+                <Image
+                  src={about23}
+                  alt="about23"
+                  class="rounded-lg hover:scale-105 ease-in-out duration-300"
+                  loading="lazy"
+                />
+              </figure>
+            </a>
+          </div>
+
+          <div class="gallery-item" >
+            <a href="/src/images/about2/about24.jpg" data-pswp-width="612" data-pswp-height="503" target="_blank">
+              <figure class="order-5 md:order-4 lg:order-4 pl-4">
+                <Image
+                  src={about24}
+                  alt="about24"
+                  class="rounded-lg hover:scale-105 ease-in-out duration-300"
+                  loading="lazy"
+                />
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <div x-show="tab === 'heatPipe'">
+      <h3 class="text-lg font-bold text-orange-500 dark:text-white mb-2">Tubo de Vacío Heat Pipe</h3>
+      <p class="text-justify px-6 mb-2">Los tubos de vacío Heat Pipe son la tecnología innovadora que fusiona al tubo de vacío con un tubo de cobre de alta pureza. Estos tubos, utilizados en colectores solares Solstac, tienen un punto de ebullición de solo 25ºC. Cuando el tubo de vacío Heat Pipe se calienta por encima de 25 ºC, el fluido volátil que contiene en el interior del tubo de cobre se evapora. Este vapor se eleva rápidamente a la parte superior del Heat Pipe, transfiriendo calor. Como hay pérdida de calor en el vapor (parte superior), se condensa su contenido que vuelve a formar un líquido (fluido volátil) y retorna a la parte inferior del Heat Pipe para repetir el proceso.</p>
+      <p class="text-justify px-6 mb-10">Cada Heat Pipe se prueba en su rendimiento y eficacia de transferencia de calor, y se expone a temperaturas de hasta 250°C antes de ser aprobado para su uso. Por esta razón, los Heat Pipe de cobre son relativamente blandos y están sujetos a pruebas de calidad rigurosas. Teniendo en cuenta este estricto control de calidad y la alta pureza del cobre, la esperanza de vida de la tubería de calor es incluso más larga que la del tubo solar convencional.</p>
+      <div> 
+        <div class=" px-4 mx-auto max-w-screen-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pswp-gallery" id="gallery">
+          <div class="gallery-item" >
+            <a href="/src/images/about2/about31.jpg" data-pswp-width="500" data-pswp-height="500" target="_blank">
+              <figure class="order-2 md:order-1 lg:order-1 pl-4">
+                <Image
+                  src={about31}
+                  alt="about31"
+                  class="rounded-lg hover:scale-105 ease-in-out duration-300"
+                  loading="lazy"
+                />
+              </figure>
+            </a>
+          </div>
+      
+          <div class="gallery-item" >
+            <a href="/src/images/about2/about32.jpg" data-pswp-width="500" data-pswp-height="500" target="_blank">
+              <figure class="order-3 md:order-2 lg:order-2 pl-4">
+                <Image
+                  src={about32}
+                  alt="about32"
+                  class="rounded-lg hover:scale-105 ease-in-out duration-300"
+                  loading="lazy"
+                />
+              </figure>
+            </a>
+          </div>
+
+          <div class="gallery-item" >
+            <a href="/src/images/about2/about33.jpg" data-pswp-width="500" data-pswp-height="500" target="_blank">
+              <figure class="order-4 md:order-3 lg:order-3 pl-4">
+                <Image
+                  src={about33}
+                  alt="about33"
+                  class="rounded-lg hover:scale-105 ease-in-out duration-300"
+                  loading="lazy"
+                />
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div x-show="tab === 'benefits'">
+      <h3 class="text-lg font-bold text-orange-500 dark:text-white mb-2">Beneficios de un Captador de Tubos de Vacío</h3>
+      <p class="text-justify px-6 mb-2">Con la invención de los captadores planos, han transcurrido unas cuantas décadas en el aprovechamiento del agua caliente. La introducción de los colectores de tubos de vacío últimamente se están convirtiendo rápidamente en la opción preferida respecto a los sistemas de captador plano. Lea a continuación los beneficios del por qué los sistemas de tubos de vacío son una muy buena inversión y con costes muy bajos relativos a su duración y mantenimiento.</p>
+      <p class="text-justify  px-6 mb-10" >
+        <strong class="text-lg font-bold text-orange-500 dark:text-white mb-2">Ventajas:</strong><br>
+              - Captura la luz en sus diferentes ángulos de posición solar durante el día.<br>
+              - Aumenta su área superficial expuesta al sol en cualquier momento.<br>
+              - Su sistema patentado transfiere el calor hasta un 160% demostrado en condiciones extremas.<br>
+              - Puede ser utilizado en temperaturas bajo cero en el caso de Heat Pipe.<br>
+              - Son duraderos y si un tubo se rompe, este puede ser fácilmente reemplazado y de forma más barata.<br>
+              - Proporcionan un rendimiento excelente en condiciones nubladas.<br>
+              - Comparando, requieren un área de captación más pequeña que los colectores planos.<br>
+              - No tiene problemas de corrosión como colectores planos.<br>
+              - Sistema muy estable y resistente a los vientos fuertes ya que el aire circula por entre los tubos.<br>
+              - Se reduce la acumulación de polvo y escombros.<br>
+              - Te indicamos información más detallada en fichas técnicas del captador.
+      </p>   
+      <div> 
+        <div class=" px-4 mx-auto max-w-screen-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 pswp-gallery" id="gallery">
+          <div class="gallery-item" >
+            <a href="/src/images/about2/about41.jpg" data-pswp-width="500" data-pswp-height="500" target="_blank">
+              <figure class="order-2 md:order-1 lg:order-1 pl-4">
+                <Image
+                  src={about41}
+                  alt="about41"
+                  class="rounded-lg hover:scale-105 ease-in-out duration-300"
+                  loading="lazy"
+                />
+              </figure>
+            </a>
+          </div>
+      
+          <div class="gallery-item" >
+            <a href="/src/images/about2/about44.jpg" data-pswp-width="790" data-pswp-height="561" target="_blank">
+              <figure class="order-3 md:order-1 lg:order-1 pl-4">
+                <Image
+                  src={about44}
+                  alt="about44"
+                  class="rounded-lg hover:scale-105 ease-in-out duration-300"
+                  loading="lazy"
+                />
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div x-show="tab === 'thermosiphon'">
+      <h3 class="text-lg font-bold text-orange-500 dark:text-white mb-2">Efecto Termosifón</h3>
+      <p class="text-justify px-6 mb-2">Quiere decir que la circulación del calor pasa de los captadores al depósito de almacenamiento naturalmente, sin necesidad de bomba ni otro dispositivo, gracias a la diferencia de temperatura y cambio de densidades. Con esta técnica se logró desarrollar y diseñar eficazmente un producto innovador como es el principio de funcionamiento en las Termas Compactas Solstac.</p>
+      <p class="text-justify px-6 mb-2">En efecto, cuando el agua (u otro fluido caloportador) es calentada por el sol en los captadores, se dilata y, siendo más ligera que el agua fría a volumen igual, sube, creando un movimiento en el circuito hidráulico que conecta los captadores al depósito de almacenamiento.</p>
+      <p class="text-justify px-6 mb-2">En los sistemas tanto no presurizados como presurizados, el circuito termo hidráulico se concibe en condiciones normales: el agua fría desciende y, una vez calentada en los captadores, circulará a través de los tubos, y la temperatura del agua en el depósito aumentará progresivamente.</p>
+      <p class="text-justify px-6 mb-2">El funcionamiento de este tipo de calentador de agua solar es muy simple y los riesgos de averías son escasos.</p>
+      <p class="text-justify px-6 mb-2">El tanque principal de agua debe colocarse imperativamente más alto que los captadores con el fin de permitir la termo-circulación natural.</p>
+      <p class="text-justify px-6 mb-2">Las pérdidas de carga caracterizan las resistencias al paso del agua en los circuitos, las cuales pueden hacer que la circulación sea demasiado lenta y el rendimiento no sea tan bueno. La terma solar deberá ser suficientemente potente para superar las pérdidas de carga.</p>
+      <p class="text-justify px-6 mb-10">Los emplazamientos o lugares frecuentes para colocar estos equipos son los techos planos e inclinados. Debido a la inexistencia de espacios proyectados, se utilizan diversas configuraciones en cuanto a estructuras para resolver y solucionar la instalación.</p>
+      <div> 
+        <div class=" px-4 mx-auto max-w-screen-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 pswp-gallery" id="gallery">
+          <div class="gallery-item" >
+            <a href="/src/images/about2/about51.jpg" data-pswp-width="557" data-pswp-height="530" target="_blank">
+              <figure class="order-2 md:order-1 lg:order-1 pl-4">
+                <Image
+                  src={about51}
+                  alt="about51"
+                  class="rounded-lg hover:scale-105 ease-in-out duration-300"
+                  loading="lazy"
+                />
+              </figure>
+            </a>
+          </div>
+          <div class="gallery-item" >
+            <a href="/src/images/about2/about52.jpg" data-pswp-width="738" data-pswp-height="638" target="_blank">
+              <figure class="order-3 md:order-1 lg:order-1 pl-4">
+                <Image
+                  src={about52}
+                  alt="about52"
+                  class="rounded-lg hover:scale-105 ease-in-out duration-300"
+                  loading="lazy"
+                />
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>    
+    </div>
+
+    <div x-show="tab === 'environment'">
+      <h3 class="text-lg font-bold text-orange-500 dark:text-white mb-2">Aportes al Medio Ambiente y a la Economía Familiar</h3>
+        <p class="text-justify px-6 mb-2">El sol sustituye a fuentes de producción de energía calorífica como los hidrocarburos, con la consiguiente reducción de contaminantes y menos emisiones de CO2. Sustituye a los calentadores artesanales con fuentes de calor directa producidas por carbón, sistema no recomendado por la Organización Mundial de la Salud y organismos medioambientales.</p>
+        <p class="text-justify px-6 mb-2">Usar un calentador solar significa no usar electricidad o reducción al mínimo del consumo eléctrico. No emite gases contaminantes perjudiciales para la salud y de efecto invernadero que provocan el cambio climático. No produce ningún tipo de desperdicio o residuo peligroso de difícil eliminación.</p>
+        <p class="text-justify px-6 mb-10">Este tipo de instalaciones no dejan huella ecológica cuando finaliza el periodo de explotación. Es una energía que no corre peligro de agotarse a medio plazo, puesto que su fuente productora es el Sol. En una terma solar no hay peligro de corto circuitos ni fugas de corriente. Por lo que sería tan simple de montarlo usted mismo, siguiendo unas instrucciones.</p>
+        <div> 
+          <div class=" px-4 mx-auto max-w-screen-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 pswp-gallery" id="gallery">
+            <div class="gallery-item" >
+              <a href="/src/images/about2/about61.jpg" data-pswp-width="4272" data-pswp-height="2848" target="_blank">
+                <figure class="order-2 md:order-1 lg:order-1 pl-4">
+                  <Image
+                    src={about61}
+                    alt="about61"
+                    class="rounded-lg hover:scale-105 ease-in-out duration-300"
+                    loading="lazy"
+                  />
+                </figure>
+              </a>
+            </div>
+        
+            <div class="gallery-item" >
+              <a href="/src/images/about2/about62.jpg" data-pswp-width="4272" data-pswp-height="2848" target="_blank">
+                <figure class="order-3 md:order-2 lg:order-2 pl-4">
+                  <Image
+                    src={about62}
+                    alt="about62"
+                    class="rounded-lg hover:scale-105 ease-in-out duration-300"
+                    loading="lazy"
+                  />
+                </figure>
+              </a>
+            </div>
+  
+            <div class="gallery-item" >
+              <a href="/src/images/about2/about63.jpg" data-pswp-width="4272" data-pswp-height="2848" target="_blank">
+                <figure class="order-4 md:order-3 lg:order-3 pl-4">
+                  <Image
+                    src={about63}
+                    alt="about63"
+                    class="rounded-lg hover:scale-105 ease-in-out duration-300"
+                    loading="lazy"
+                  />
+                </figure>
+              </a>
+            </div>
+  
+            <div class="gallery-item" >
+              <a href="/src/images/about2/about64.jpg" data-pswp-width="4272" data-pswp-height="2848" target="_blank">
+                <figure class="order-5 md:order-4 lg:order-4 pl-4">
+                  <Image
+                    src={about64}
+                    alt="about64"
+                    class="rounded-lg hover:scale-105 ease-in-out duration-300"
+                    loading="lazy"
+                  />
+                </figure>
+              </a>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+<script src="//unpkg.com/alpinejs" defer></script>
+<script>
+  import PhotoSwipeLightbox from "photoswipe/lightbox";
+  const lightbox = new PhotoSwipeLightbox({
+      gallery: "#gallery",
+      children: "a",
+      pswpModule: () => import("photoswipe"),
+  });
+  lightbox.init();
+  </script>
+  
+  

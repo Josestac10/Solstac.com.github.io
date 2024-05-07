@@ -1,0 +1,256 @@
+---
+import { Image } from "astro:assets";
+import term3 from "/src/images/Productos/terma3.jpg";
+---
+
+<section class="lg:flex">
+  <div class="lg:w-1/2 ml-8">
+    <Image
+      src={term3}
+      class="h-auto max-w-full lg:max-h-full ml-4" 
+      alt="Terma Solar Presurizada Heat Pipe"
+      loading="eager"
+    />
+  </div>
+  <div class="lg:w-1/2 p-6 flex justify-center items-center text-lg">
+    <div class="text-center lg:text-left lg:block ms:text-left">
+      <p class="text-lg font-semibold underline text-orange-500">TANQUE ACUMULADOR:</p>
+      <li>Capacidades disponibles: 100L, 150L, 200L, 240L</li>
+      <li>Material exterior: Acero galvanizado con recubrimiento PVDF ó INOX</li>
+      <li>Material interior: Acero inoxidable alimentario</li>
+      <li>Barra de magnesio para atrapar residuos minerales</li>
+      <p class="text-lg font-semibold underline mt-3 text-orange-500">AISLAMIENTO TANQUE:</p>
+      <li>Capa de aislamiento de espuma de poliuretano</li>
+      <p class="text-lg font-semibold underline mt-3 text-orange-500">SERPENTIN:</p>
+      <li>Serpentin interior de tubo de cobre de alta pureza, 40 metros de longitud</li>
+      <p class="text-lg font-semibold underline mt-3 text-orange-500">TUBOS DE VACIO:</p>
+      <li>Vidrio borosilicato con vacío, tratamiento metálico y absorción extra</li>
+      <li>Dimensiones: 58mm x 1800mm</li>
+      <p class="text-lg font-semibold underline mt-3 text-orange-500">ESTRUCTURA DE SOPORTE:</p>
+      <li>Material: Aleación de aluminio</li>
+      <li>Inclinación: 25º</li>
+      <p class="text-lg font-semibold underline mt-3 text-orange-500">OPCIONALES:</p>
+      <li>Control de nivel por boya inoxidable (con tapa)</li>
+      <li>Entradas para resistencia eléctrica y sensor de kit controlador digital</li>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="conten-center">
+  <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+    <ul
+      class="flex flex-wrap -mb-px text-sm font-medium text-center justify-center items-center"
+      id="default-styled-tab"
+      data-tabs-toggle="#default-styled-tab-content"
+      data-tabs-active-classes="text-orange-500 dark:text-purple-500 dark:hover:text-purple-500 border-orange-500 dark:border-purple-500"
+      data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700"
+      role="tablist"
+    >
+      <li class="me-2 text-base" role="presentation">
+        <button
+          class="inline-block p-4 border-b-2 rounded-t-lg"
+          id="profile-styled-tab"
+          data-tabs-target="#styled-profile"
+          type="button"
+          role="tab"
+          aria-controls="profile"
+          aria-selected="false">Medidas</button
+        >
+      </li>
+      <li class="me-2 text-base" role="presentation">
+        <button
+          class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+          id="dashboard-styled-tab"
+          data-tabs-target="#styled-dashboard"
+          type="button"
+          role="tab"
+          aria-controls="dashboard"
+          aria-selected="false">Especificaciones</button
+        >
+      </li>
+      <li class="me-2 text-base" role="presentation">
+        <button
+          class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+          id="settings-styled-tab"
+          data-tabs-target="#styled-settings"
+          type="button"
+          role="tab"
+          aria-controls="settings"
+          aria-selected="false">Incluyen</button
+        >
+      </li>
+      <li class="text-base" role="presentation">
+        <button
+          class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+          id="contacts-styled-tab"
+          data-tabs-target="#styled-contacts"
+          type="button"
+          role="tab"
+          aria-controls="contacts"
+          aria-selected="false">Conexiones y Recomendaciones</button
+        >
+      </li>
+    </ul>
+  </div>
+
+  <div id="default-styled-tab-content">
+    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-profile" role="tabpanel">
+      <div class="relative overflow-x-auto">
+        <table class="w-full text-base text-left rtl:text-right text-black dark:text-gray-400 md:table-fixed">
+          <thead class="text-orange-500 bg-orange-100 text-center dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+              <th scope="col" class="px-6 py-3">Capacidad</th>
+              <th scope="col" class="px-6 py-3">Nº Tubos</th>
+              <th scope="col" class="px-6 py-3">A (mm)</th>
+              <th scope="col" class="px-6 py-3">B (mm)</th>
+              <th scope="col" class="px-6 py-3">C (mm)</th>
+              <th scope="col" class="px-6 py-3">D (mm)</th>
+              <th scope="col" class="px-6 py-3">E (mm)</th>
+            </tr>
+          </thead>
+          <tbody class="text-center bg-orange-100">
+            <tr class="bg-white dark:bg-gray-800">
+              <td class="px-6 py-4">100L</td>
+              <td class="px-6 py-4">10</td>
+              <td class="px-6 py-4">890</td>
+              <td class="px-6 py-4">860</td>
+              <td class="px-6 py-4">1150</td>
+              <td class="px-6 py-4">2010</td>
+              <td class="px-6 py-4">1650</td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800">
+              <td class="px-6 py-4">150L</td>
+              <td class="px-6 py-4">15</td>
+              <td class="px-6 py-4">1290</td>
+              <td class="px-6 py-4">1260</td>
+              <td class="px-6 py-4">1150</td>
+              <td class="px-6 py-4">2010</td>
+              <td class="px-6 py-4">1650</td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800">
+              <td class="px-6 py-4">200L</td>
+              <td class="px-6 py-4">20</td>
+              <td class="px-6 py-4">1690</td>
+              <td class="px-6 py-4">1660</td>
+              <td class="px-6 py-4">1150</td>
+              <td class="px-6 py-4">2010</td>
+              <td class="px-6 py-4">1650</td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800">
+              <td class="px-6 py-4">240L</td>
+              <td class="px-6 py-4">24</td>
+              <td class="px-6 py-4">2010</td>
+              <td class="px-6 py-4">1980</td>
+              <td class="px-6 py-4">1150</td>
+              <td class="px-6 py-4">2010</td>
+              <td class="px-6 py-4">1650</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+    <div class="relative overflow-x-auto">
+      <table class="w-full text-sm text-gray-500 dark:text-gray-400">
+        <thead class="text-orange-500 bg-orange-100 text-center dark:bg-gray-700">
+          <tr>
+            <th scope="col" class="w-1/2 px-6 py-3 text-right">Característica</th>
+            <th scope="col" class="w-1/2 px-6 py-3 text-left">Especificaciones</th>
+          </tr>
+        </thead>
+        <tbody class="bg-white dark:bg-gray-800">
+          <tr>
+            <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Material tanque Interior</td>
+            <td class="w-1/2 px-6 py-4 text-left">Acero inoxidable alimentario</td>
+          </tr>
+          <tr>
+            <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Material exterior</td>
+            <td class="w-1/2 px-6 py-4 text-left">Acero galvanizado con recubrimiento PVDF o INOX</td>
+          </tr>
+          <tr>
+            <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Capa de aislamiento</td>
+            <td class="w-1/2 px-6 py-4 text-left">Espuma de poliuretano</td>
+          </tr>
+          <tr>
+            <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Capacidad del tanque</td>
+            <td class="w-1/2 px-6 py-4 text-left">100L, 150L, 200L, 240L, 300L</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <div class="hidden rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-settings" role="tabpanel" aria-labelledby="settings-tab">
+    <div class="relative overflow-x-auto">
+      <table class="w-full text-sm text-gray-500 dark:text-gray-400">
+        <thead class="text-orange-500 bg-orange-100 text-center dark:bg-gray-700">
+          <tr>
+            <th scope="col" class="w-1/2 px-6 py-3 text-right">Componente</th>
+            <th scope="col" class="w-1/2 px-6 py-3 text-left">Detalles</th>
+          </tr>
+        </thead>
+        <tbody class="bg-white dark:bg-gray-800">
+          <tr>
+            <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Serpentin de cobre</td>
+            <td class="w-1/2 px-6 py-4 text-left">40 metros de tubo de cobre de alta pureza</td>
+          </tr>
+          <tr>
+            <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Barra de magnesio</td>
+            <td class="w-1/2 px-6 py-4 text-left">Atrapa residuos minerales</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-contacts" role="tabpanel" aria-labelledby="contacts-tab">
+    <div class="relative overflow-x-auto">
+      <table class="w-full text-sm text-gray-500 dark:text-gray-400">
+        <thead class="text-orange-500 bg-orange-100 text-center dark:bg-gray-700">
+          <tr>
+            <th scope="col" class="w-1/2 px-6 py-3 text-right">Conexión</th>
+            <th scope="col" class="w-1/2 px-6 py-3 text-left">Detalles</th>
+          </tr>
+        </thead>
+        <tbody class="bg-white dark:bg-gray-800">
+          <tr>
+            <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Tipo de entrada/salida de agua</td>
+            <td class="w-1/2 px-6 py-4 text-left">Macho 1/2" (preparada para sistemas de alta presión)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="text-ms text-orange-500 font-semibold mb-3 mt-3 text-center"></div>
+    <div class="relative overflow-x-auto">
+      <table class="w-full text-sm text-gray-500 dark:text-gray-400">
+        <thead class="text-orange-500 bg-orange-100 text-center dark:bg-gray-700">
+          <tr>
+            <th scope="col" class="px-6 py-3 text-center">Recomendación</th>
+          </tr>
+        </thead>
+        <tbody class="bg-white dark:bg-gray-800">
+          <tr>
+            <td class="px-6 py-4 text-center">
+              Recomendado para instalaciones con presurización por bombas.
+            </td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4 text-center">
+              Cuidado con temperaturas superiores a 120ºC en el serpentin.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+
+
+
+</section>

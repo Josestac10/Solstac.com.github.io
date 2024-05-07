@@ -1,0 +1,44 @@
+---
+// Importa Flowbite y Tailwind CSS
+import 'flowbite';
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solstac</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@latest/dist/flowbite.min.js"></script>
+    <style>
+        body { background-color: #ffffff; }
+        .header-bg { background-color: #f97316; } /* Naranja para la cabecera */
+        .footer-bg { background-color: #f3f4f6; } /* Gris claro para el pie de página */
+        .btn-primary { background-color: #f97316; color: white; }
+        .btn-primary:hover { background-color: #ea580c; } /* Un tono más oscuro de naranja */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+
+            border-radius: 50%;
+            padding: 15px 20px; /* Aumento del padding para un botón más grande */
+            font-size: 30px; /* Tamaño de fuente más grande para el icono */
+            
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .whatsapp-icon {
+            height: 30px; /* Aumento del tamaño del icono */
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://wa.me/+51949148120" target="_blank" class="whatsapp-button hover:scale-110 ease-out duration-300">
+        <img src="/src/images/icons/whats.svg" alt="WhatsApp" style="height: 60px; width: 60px;">
+    </a>
+    

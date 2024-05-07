@@ -1,0 +1,311 @@
+---
+import { Image } from "astro:assets";
+import term2 from "/src/images/Productos/terma2.png";
+import terma21 from "/src/images/Productos/terma21.png"
+import terma22 from "/src/images/Productos/terma22.jpg"
+---
+
+<section class="lg:flex">
+  <div class="lg:w-1/2 ml-8">
+    <div class="grid gap-4">
+        <div class="flex justify-center">
+            <div class="ml-8"> <!-- Envuelve la imagen con un contenedor y aplica el margen aquí -->
+                <Image src={term2} class="h-auto max-w-full rounded-lg ml-8" alt="" />
+            </div>
+        </div>
+        <div class="grid grid-cols-5 gap-4 justify-center ml-8">
+            <div>
+                <Image src={terma21} class="h-auto max-w-full rounded-lg ml-8" alt="" />
+            </div>
+            <div>
+                <Image src={terma22} class="h-auto max-w-full rounded-lg ml-8" alt="" />
+            </div>
+            <!-- Puedes agregar más imágenes aquí si es necesario -->
+        </div>
+    </div>
+</div>
+
+  
+  <div class="lg:w-1/2 p-6 flex justify-center items-center text-lg">
+    <div class="text-center lg:text-left lg:block ms:text-left">
+      <p class="text-lg font-semibold underline text-orange-500">TANQUE:</p>
+      <li>Interior Acero Inoxidable alimentario</li>
+      <li>Exterior Acero INOXIDABLE/li>
+      <p class="text-lg font-semibold underline mt-3 text-orange-500">
+        AISLAMIENTO TANQUE:
+      </p>
+      <li>Poliuretano 5 cm</li>
+      <p class="text-lg font-semibold underline mt-3 text-orange-500">
+        ESTRUCTURA MODULAR:
+      </p>
+      <li>Aleación de aluminio</li>
+      <p class="text-lg font-semibold underline mt-3 text-orange-500">
+        TUBOS DE VACIO:
+      </p>
+      <li>Borosilicato, Heat Pipe, Cu y agua</li>
+      <li>Tratamiento metálico en 3 capas</li>
+      <li>Absorción extra super rendimiento</li>
+      <li>Metal interior para transparencia</li>
+      <li>Resistente al granizo 25 mm</li>
+      <p class="text-lg font-semibold underline mt-3 text-orange-500">
+        MANUAL DE INSTALACION:
+      </p>
+      <li>Operación, montaje, mantenimiento</li>
+    </div>
+  </div>
+</section>
+
+
+<section class="conten-center">
+  <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+    <ul
+      class="flex flex-wrap -mb-px text-sm font-medium text-center justify-center items-center"
+      id="default-styled-tab"
+      data-tabs-toggle="#default-styled-tab-content"
+      data-tabs-active-classes="text-orange-500 dark:text-purple-500 dark:hover:text-purple-500 border-orange-500 dark:border-purple-500"
+      data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700"
+      role="tablist"
+    >
+      <li class="me-2 text-base" role="presentation">
+        <button
+          class="inline-block p-4 border-b-2 rounded-t-lg"
+          id="profile-styled-tab"
+          data-tabs-target="#styled-profile"
+          type="button"
+          role="tab"
+          aria-controls="profile"
+          aria-selected="false">Medidas</button
+        >
+      </li>
+      <li class="me-2 text-base" role="presentation">
+        <button
+          class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+          id="dashboard-styled-tab"
+          data-tabs-target="#styled-dashboard"
+          type="button"
+          role="tab"
+          aria-controls="dashboard"
+          aria-selected="false">Especificaciones</button
+        >
+      </li>
+      <li class="me-2 text-base" role="presentation">
+        <button
+          class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+          id="settings-styled-tab"
+          data-tabs-target="#styled-settings"
+          type="button"
+          role="tab"
+          aria-controls="settings"
+          aria-selected="false">Incluyen</button
+        >
+      </li>
+      <li class="text-base" role="presentation">
+        <button
+          class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+          id="contacts-styled-tab"
+          data-tabs-target="#styled-contacts"
+          type="button"
+          role="tab"
+          aria-controls="contacts"
+          aria-selected="false">Conexiones y Recomendaciones</button
+        >
+      </li>
+    </ul>
+  </div>
+
+  <div id="default-styled-tab-content">
+    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-profile" role="tabpanel">
+      <div class="relative overflow-x-auto">
+        <table class="w-full text-base text-left rtl:text-right text-black dark:text-gray-400 md:table-fixed">
+          <thead class="text-orange-500 bg-orange-100 text-center dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+              <th scope="col" class="px-6 py-3">Capacidad</th>
+              <th scope="col" class="px-6 py-3">Nº Tubos</th>
+              <th scope="col" class="px-6 py-3">A (mm)</th>
+              <th scope="col" class="px-6 py-3">B (mm)</th>
+              <th scope="col" class="px-6 py-3">C (mm)</th>
+              <th scope="col" class="px-6 py-3">D (mm)</th>
+              <th scope="col" class="px-6 py-3">E (mm)</th>
+            </tr>
+          </thead>
+          <tbody class="text-center bg-orange-100">
+            <tr class="bg-white dark:bg-gray-800">
+              <td class="px-6 py-4">100L</td>
+              <td class="px-6 py-4">10</td>
+              <td class="px-6 py-4">890</td>
+              <td class="px-6 py-4">860</td>
+              <td class="px-6 py-4">1150</td>
+              <td class="px-6 py-4">1650</td>
+              <td class="px-6 py-4">2010</td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800">
+              <td class="px-6 py-4">150L</td>
+              <td class="px-6 py-4">15</td>
+              <td class="px-6 py-4">1290</td>
+              <td class="px-6 py-4">1260</td>
+              <td class="px-6 py-4">1150</td>
+              <td class="px-6 py-4">1650</td>
+              <td class="px-6 py-4">2010</td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800">
+              <td class="px-6 py-4">200L</td>
+              <td class="px-6 py-4">20</td>
+              <td class="px-6 py-4">1690</td>
+              <td class="px-6 py-4">1980</td>
+              <td class="px-6 py-4">1150</td>
+              <td class="px-6 py-4">1650</td>
+              <td class="px-6 py-4">2010</td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800">
+              <td class="px-6 py-4">240L</td>
+              <td class="px-6 py-4">24</td>
+              <td class="px-6 py-4">2010</td>
+              <td class="px-6 py-4">2460</td>
+              <td class="px-6 py-4">1150</td>
+              <td class="px-6 py-4">1650</td>
+              <td class="px-6 py-4">2010</td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800">
+              <td class="px-6 py-4">300L</td>
+              <td class="px-6 py-4">30</td>
+              <td class="px-6 py-4">2690</td>
+              <td class="px-6 py-4">2740</td>
+              <td class="px-6 py-4">1150</td>
+              <td class="px-6 py-4">1650</td>
+              <td class="px-6 py-4">2010</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+  <div
+  class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
+  id="styled-dashboard"
+  role="tabpanel"
+  aria-labelledby="dashboard-tab"
+>
+  <div class="relative overflow-x-auto">
+    <table class="w-full text-sm text-gray-500 dark:text-gray-400">
+      <thead class="text-orange-500 bg-orange-100 text-center dark:bg-gray-700">
+        <tr>
+          <!-- Ajusta el width para controlar la separación -->
+          <th scope="col" class="w-1/2 px-6 py-3 text-right">Característica</th>
+          <th scope="col" class="w-1/2 px-6 py-3 text-left">Especificaciones</th>
+        </tr>
+      </thead>
+      <tbody class="bg-white dark:bg-gray-800">
+        <tr>
+          <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Salida de agua caliente</td>
+          <td class="w-1/2 px-6 py-4 text-left">Macho 1/2" o 3/4"</td>
+        </tr>
+        <tr>
+          <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Entrada de agua fría</td>
+          <td class="w-1/2 px-6 py-4 text-left">Macho 1/2"</td>
+        </tr>
+        <tr>
+          <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Entrada de la Resistencia</td>
+          <td class="w-1/2 px-6 py-4 text-left">TAPA</td>
+        </tr>
+        <tr>
+          <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Entrada del sensor</td>
+          <td class="w-1/2 px-6 py-4 text-left">TAPA</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div
+  class="hidden rounded-lg bg-gray-50 dark:bg-gray-800"
+  id="styled-settings"
+  role="tabpanel"
+  aria-labelledby="settings-tab"
+>
+  <div class="relative overflow-x-auto">
+    <table class="w-full text-sm text-gray-500 dark:text-gray-400">
+      <thead class="text-orange-500 bg-orange-100 text-center dark:bg-gray-700">
+        <tr>
+          <th scope="col" class="w-1/2 px-6 py-3 text-right">Componente</th>
+          <th scope="col" class="w-1/2 px-6 py-3 text-left">Detalles</th>
+        </tr>
+      </thead>
+      <tbody class="bg-white dark:bg-gray-800">
+        <tr>
+          <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Válvula de seguridad T/P</td>
+          <td class="w-1/2 px-6 py-4 text-left">3/4"</td>
+        </tr>
+        <tr>
+          <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Válvula de paso</td>
+          <td class="w-1/2 px-6 py-4 text-left">1/2"</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div
+  class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
+  id="styled-contacts"
+  role="tabpanel"
+  aria-labelledby="contacts-tab"
+>
+  <div class="relative overflow-x-auto">
+    <table class="w-full text-sm text-gray-500 dark:text-gray-400">
+      <thead class="text-orange-500 bg-orange-100 text-center dark:bg-gray-700">
+        <tr>
+          <th scope="col" class="w-1/2 px-6 py-3 text-right">Conexión</th>
+          <th scope="col" class="w-1/2 px-6 py-3 text-left">Detalles</th>
+        </tr>
+      </thead>
+      <tbody class="bg-white dark:bg-gray-800">
+        <tr>
+          <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Salida de agua caliente</td>
+          <td class="w-1/2 px-6 py-4 text-left">Macho 1/2"</td>
+        </tr>
+        <tr>
+          <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Entrada de agua fría</td>
+          <td class="w-1/2 px-6 py-4 text-left">Macho 1/2"</td>
+        </tr>
+        <tr>
+          <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Entrada de la Resistencia</td>
+          <td class="w-1/2 px-6 py-4 text-left">TAPA</td>
+        </tr>
+        <tr>
+          <td class="w-1/2 px-6 py-4 text-orange-500 font-semibold text-right">Entrada del sensor</td>
+          <td class="w-1/2 px-6 py-4 text-left">TAPA</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="text-ms text-orange-500 font-semibold mb-3 mt-3 text-center"></div>
+  <div class="relative overflow-x-auto">
+    <table class="w-full text-sm text-gray-500 dark:text-gray-400">
+      <thead class="text-orange-500 bg-orange-100 text-center dark:bg-gray-700">
+        <tr>
+          <th scope="col" class="px-6 py-3 text-center">Recomendación</th>
+        </tr>
+      </thead>
+      <tbody class="bg-white dark:bg-gray-800">
+        <tr>
+          <td class="px-6 py-4 text-center">
+            Para climas fríos#forrar tubos de agua expuestos con Poliuretano
+          </td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 text-center">
+            El agua solar supera los 100ºC y se recomienda tener cuidado con su uso que puede producir daños.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+</section>
